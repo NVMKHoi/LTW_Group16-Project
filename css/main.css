@@ -1,0 +1,114 @@
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-top .logo {
+    flex: 1;
+}
+
+.header-top .logo img {
+    height: 70px;
+}
+
+.header-top .search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 360px;
+    padding-top: 10px;
+}
+
+
+.header-top .search input {
+    background-color: #f2f2f2;
+    border-style: none;
+    height: 50px;
+    width: 310px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 12px;
+}
+
+.header-top .search button {
+    background-color: #f2f2f2;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-top .login {
+    flex: 1;
+}
+
+.header-top .login-btn {
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f49300;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.header-foot {
+    background-color: #f49300;
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.header-foot .nav-bar {
+    margin: 0;
+    padding-left: 0;
+}
+
+.header-foot .nav-item {
+    display: inline-block;
+    padding: 15px 15px 15px 30px;
+}
+
+li.nav-item:first-child {
+    padding-left: 0;
+}
+
+.header-foot .nav-item-link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.header-foot .booking {
+    float: right;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #333333;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 275px;
+    width: 100%;
+    background-color: #353535;
+
+}
