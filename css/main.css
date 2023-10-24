@@ -133,7 +133,7 @@ li.nav-item:first-child {
 footer {
     width: 100%;
     background-color: #353535;
-    padding-top: 300px;
+    padding-top: 30px;
 
 }
 
@@ -205,16 +205,26 @@ footer .copyright {
     border-top: 1px solid var(--main-color);
 }
 
-.footer-ft {
-    margin-top: auto;
-}
+
 
 /*content*/
-.content {
+table, tr, td {
+    border: 2px solid #353535;
+    border-collapse: collapse;
     text-align: center;
-
-}
-.gallery {
-    float: none;
 }
 
+.problem {
+    margin: 5px;
+}
+.problem a {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+.problem td:hover {
+    background: var(--main-color);
+}
+.problem td:hover a{
+    color: var(--white-color);
+}
