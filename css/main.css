@@ -128,13 +128,25 @@ li.nav-item:first-child {
     line-height: 40px;
     color: var(--main-color);
 }
-
+.navigation ul li:hover {
+    background: var(--main-color);
+}
+.navigation ul li:hover > ul {
+    display: block;
+}
+.navigation ul li {
+    -webkit-transition: all.2s ease-in-out;
+    -moz-transition: all.2s ease-in-out;
+    transition: all.2s ease-in-out;
+}
+.navigation ul ul {
+    display: none;
+}
 /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
 footer {
     width: 100%;
     background-color: #353535;
     padding-top: 30px;
-
 }
 
 .footer-nav {
