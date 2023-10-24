@@ -206,7 +206,6 @@ footer .copyright {
 }
 
 
-
 /*content*/
 table, tr, td {
     border: 2px solid #353535;
@@ -214,17 +213,47 @@ table, tr, td {
     text-align: center;
 }
 
+
 .problem {
     margin: 5px;
 }
+
 .problem a {
     color: var(--text-color);
     font-weight: 600;
     font-size: 18px;
 }
+
 .problem td:hover {
     background: var(--main-color);
 }
-.problem td:hover a{
+
+.problem td:hover a {
     color: var(--white-color);
+}
+.bang-gia a {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.bang-gia td:hover {
+    background: var(--main-color);
+}
+
+.bang-gia td:hover a{
+    color: var(--white-color);
+}
+
+.bang-gia {
+    margin: 5px;
+
+}
+
+
+
+.text {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    margin: 5px;
+    background-image: linear-gradient(to right, var(--main-color), var(--white-color));
 }
