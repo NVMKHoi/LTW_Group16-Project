@@ -1,7 +1,220 @@
+/* header-top */
 
-/*page và các thẻ dùng chung*/
-/*section_1*/
-/*3-columns*/
-/*navigation*/
-/*section footer*/
-/*footer*/
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-top .logo {
+    flex: 1;
+}
+
+.header-top .logo img {
+    height: 70px;
+}
+
+.header-top .search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 360px;
+    padding-top: 10px;
+}
+
+
+.header-top .search input {
+    background-color: #f2f2f2;
+    border-style: none;
+    height: 50px;
+    width: 310px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 12px;
+}
+
+.header-top .search button {
+    background-color: #f2f2f2;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-top .login {
+    flex: 1;
+}
+
+.header-top .login-btn {
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* header-foot */
+
+.header-foot {
+    background-color: var(--main-color);
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.header-foot .nav-bar {
+    margin: 0;
+    padding-left: 0;
+}
+
+.header-foot .nav-item {
+    display: inline-block;
+    padding: 19px 19px 19px 30px;
+    position: relative;
+}
+
+li.nav-item:first-child {
+    padding-left: 0;
+}
+
+.header-foot .nav-item-link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--white-color);
+}
+
+.header-foot .nav-item .sub-nav {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 200px;
+    padding-left: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+}
+
+.header-foot .nav-item .sub-nav a {
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    color: var(--text-color);
+}
+
+.header-foot .booking {
+    padding: 10px 0 10px 30px;
+}
+
+.booking a {
+    background-color: #333333;
+    width: 200px;
+    text-align: center;
+    border-radius: 34px;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--main-color);
+}
+
+/* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+footer {
+    width: 100%;
+    background-color: #353535;
+    padding-top: 300px;
+
+}
+
+.footer-nav {
+    margin-top: auto;
+}
+
+footer .footer-row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.nav-column-logo {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav-column-logo .logo img {
+    height: 60px;
+}
+
+.nav-column-logo .address {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: var(--white-color);
+    margin-top: 16px;
+}
+
+.nav-column {
+    flex: 0 0 22%;
+    max-width: 22%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav-column .footer-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.nav-column p {
+    font-size: 1.4rem;
+    line-height: 19px;
+    color: var(--white-color);
+    margin-top: 15px;
+}
+
+.nav-column ul {
+    padding-left: 0;
+}
+
+.nav-column li, a {
+    font-size: 1.4rem;
+    line-height: 19px;
+    color: var(--white-color);
+    margin-top: 15px;
+}
+
+footer .copyright {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 20px 0px 20px;
+    border-top: 1px solid var(--main-color);
+}
+
+.footer-ft {
+    margin-top: auto;
+}
+
+/*content*/
+.content {
+    text-align: center;
+
+}
+.gallery {
+    float: none;
+}
+

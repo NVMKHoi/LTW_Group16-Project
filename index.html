@@ -2,80 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareX</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
-<div class="container" id="page">
-    <div class="head" id="section_1">
-        <div class="3-columns">
-            <div class="logo">
-                <img src="image/logo.png" alt="carex">
-            </div>
-            <div class="search">
-                <form>
-                    <input type="text" name="search" placeholder="Tìm kiếm...">
-                </form>
-            </div>
-            <div class="login-btn">
-                <button class="btn"><a href="">ĐĂNG NHẬP</a></button>
+<div class="main">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                    <button type="submit" class="search-summit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="login">
+                    <a href="#" class="login-btn">ĐĂNG NHẬP</a>
+                </div>
             </div>
         </div>
-        <div class="navgation">
-            <div class="nav-bar">
-                <ul>
-                    <li class="active"><a href="#">TRANG CHỦ</a></li>
-                    <li><a href="chuyen-de-iphone.html">APPLE</a></li>
-                    <li><a href="chuyen-de-samsung.html">SAMSUNG</a></li>
-                    <li><a href=".html">HÃNG KHÁC</a>
-                        <div class="hk-dropdown">
-                            <a href="#">OPPO</a>
-                            <a href="#">XIAOMI</a>
-                            <a href="#">LG</a>
+        <div class="header-foot">
+            <div class="container">
+                <div class="navigation">
+                    <ul class="nav-bar">
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">SỬA CHỮA IPHONE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item"><a href="">Sửa chữa Xiaomi</a></li>
+                                <li class="sub-item"><a href="">Sửa chữa OPPO</a></li>
+                                <li class="sub-item"><a href="">Sửa chữa LG</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <div class="booking">
+                        <a href="#">
+                            Đặt lịch hẹn
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="gallery">
+                <a href="ip-manhinh.html">
+                    <img src="image/screen.jpg" alt="screen" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Màn Hình</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="#">
+                    <img src="image/cam.jpg" alt="camera" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Camera</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="#">
+                    <img src="image/pin.jpg" alt="battery" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Pin</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="#">
+                    <img src="image/main.jpg" alt="mother-board" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Mainboard</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="#">
+                    <img src="image/loa.jpg" alt="speaker" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Loa Ngoài</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="#">
+                    <img src="image/sac.jpg" alt="charge" width="200" height="200">
+                </a>
+                <div class="bot">
+                    <a>Sạc</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-ft">
+            <div class="container">
+                <div class="footer-nav">
+                    <div class="footer-row">
+                        <div class="nav-column-logo">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="address">
+                                <p>
+                                    <i class="fa fa-map-marker"></i>
+                                    Cơ sở chính: Trường Đại học Nông Lâm, KP6, Phường Linh Trung, TP Thủ Đức,
+                                    TP. Hồ Chí Minh
+                                </p>
+                            </div>
                         </div>
-                    </li>
-                    <li class="datlich"><a href=".html">ĐẶT LỊCH</a></li>
-                </ul>
+                        <div class="nav-column">
+                            <div class="about">
+                                <h3 class="footer-heading">Về CareX</h3>
+                                <ul>
+                                    <li>
+                                        <a href="">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tra máy gửi sửa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-column">
+                            <div class="info">
+                                <h3 class="footer-heading">Thông tin và chính sách</h3>
+                                <ul>
+                                    <li>
+                                        <a href="">Hướng dẫn đặt lịch, thanh toán</a>
+                                    </li>
 
+                                    <li>
+                                        <a href="">Chính sách đổi trả, bảo hành</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-column">
+                            <div class="support">
+                                <h3 class="footer-heading">Tổng đài hỗ trợ miễn phí</h3>
+                                <p>Gọi tư vấn: <a href="tel:1800.2406" style="color: #f49300">1800.2406</a>
+                                    (9h00 - 21h00)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 LTW GROUP 16</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- end section 1-->
-    <div class="body-page" id="section_2">
-        content
-    </div>
-    <!-- end section n-->
-    <div class="footer" id="section_footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="image/logo.png" alt="carex">
-            </div>
-            <div class="footer-vitri">
-                <i class="fa fa-map-marker"></i>
-                <a href="https://maps.app.goo.gl/wgy5aqmJKAyP6ZDm6" target="_blank">
-                    Khu phố 6, phường Linh Trung, Thành Phố Thủ Đức, Thành Phố Hồ Chí Minh</a>
-            </div>
-            <div class="footer-contact">
-                <ul>
-                    <li><a href="#" class="fa fa-volume-control-phone">09009069</a></li>
-                    <li><a href="#" class="fa fa-facebook"></a>Dịch Vụ Sửa Chữa Điện Thoại CareX</li>
-                    <li><a href="#" class="fa fa-google"></a>_CareXRepair</li>
-                    <li><a href="#" class="fa fa-youtube"></a>@careXoffical</li>
+    </footer>
 
-                </ul>
-            </div>
 
-            <div class="copy">
-                <a>Copyright by BA CHÀNG LÍNH NGỰ LÂM</a>
-            </div>
-
-        </div>
-    </div>
-    <!-- end footer - end page-->
 </div>
-
 </body>
 </html>
