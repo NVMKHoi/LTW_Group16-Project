@@ -1,3 +1,10 @@
+
+/*page và các thẻ dùng chung*/
+/*section_1*/
+/*3-columns*/
+/*navigation*/
+/*section footer*/
+/*footer*/
 /* header-top */
 
 .header-top .container {
@@ -87,6 +94,19 @@
     position: relative;
 }
 
+.navigation ul li:hover{background: var(--main-color);}
+.navigation ul li:hover > ul{display: block;}
+.navigation ul li{
+    /*float: left;*/
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.navigation ul ul {
+    display: none;
+}
+
 li.nav-item:first-child {
     padding-left: 0;
 }
@@ -100,7 +120,7 @@ li.nav-item:first-child {
 
 .header-foot .nav-item .sub-nav {
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 30px;
     width: 200px;
     padding-left: 0;
@@ -128,11 +148,13 @@ li.nav-item:first-child {
     line-height: 40px;
     color: var(--main-color);
 }
+/*.booking {*/
+/*    float: left;*/
+/*}*/
 
 /* footer */
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -203,7 +225,82 @@ footer .copyright {
     padding: 20px 0px 20px;
     border-top: 1px solid var(--main-color);
 }
+/*.container ul{*/
+/*    padding: 0 20px ;*/
+/*}*/
+/*.container ul li{*/
+/*    width: 100px;*/
+/*    height: 150px;*/
+/*    text-align: center;*/
+/*    border: 1px solid grey;*/
 
-/* Chuyen-de-samsung html */
+/*    float: left;*/
+/*    padding: 0 20px ;*/
+/*}*/
+/*.container ul li a{*/
+/*    text-decoration: none;*/
+/*}*/
+/*table, th, td {*/
+/*    width: 400px;*/
+/*    height: 200px;*/
+/*    border: 1px solid grey;*/
+/*    border-collapse: collapse;*/
+/*}*/
 
+/*CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM-*/
+.home{
+    display: flex;
+    position: relative;
+}
+.home ul li a{
+    position: absolute;
+    color: var(--main-color);
+    font-weight: lighter;
+    font-size:14px ;
+}
+#tag{
+    display: flex;
+    margin: 30px 0;
+}
+.tags{
+    box-shadow: 0 0 2px var(--text-color);
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.tags img{
+    margin: 12px;
 
+}
+.text-logo{
+    width: 200px;
+    height: 50px;
+    border-top:solid 1px darkgrey;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+}
+#tag .tags .text-xm{
+    color: var(--white-color);
+    width: 90px;
+    height: 30px;
+    background: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 6px;
+    margin-left:55px;
+}
+#tag .tags .xm{
+    color: var(--main-color);
+    width: 150px;
+    height: 40px;
+    background: var(--white-color);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 12px;
+    margin-left: 26px;
+    margin-top: 132px;
+    font-size: 15px;
+}
