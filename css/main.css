@@ -194,8 +194,7 @@ footer .footer-row {
 }
 
 .nav-column {
-    flex: 0 0 22%;
-    max-width: 22%;
+    max-width: 301px;
     padding-right: 15px;
     padding-left: 55px;
     margin-top: 20px;
@@ -235,8 +234,10 @@ footer .copyright {
 }
 
 /*CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM-------*/
+                                                    /*create line return*/
 .home ul{
-    margin: auto    ;
+    margin: 0;
+    padding-left: 0;
     padding-top: 15px;
     width: 400px;
     height: 40px;
@@ -246,6 +247,7 @@ footer .copyright {
     font-weight: lighter;
     font-size:13px ;
 }
+                                                    /*create tag in chuyen-de-khac*/
 #tag{
     display: flex;
     margin: 30px 0;
@@ -293,3 +295,214 @@ footer .copyright {
     margin-top: 132px;
     font-size: 15px;
 }
+                                                    /*create conct*/
+#conct ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 55px;
+ }
+#conct li {
+    text-align: center;
+    background: var(--main-color);
+    height: 55px;
+    padding-top: 1px;
+    margin: 7px 0;
+
+}
+#conct li a {
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+}
+#conct li:last-child {
+    border-bottom: none;
+}
+#conct li:hover{
+    position: relative;
+    background: white;
+    border: 1px solid var(--black-color);
+}
+#conct li a:hover{
+    color: black;
+}
+#conct {
+    position: fixed;
+    margin-left: 1108px;
+}
+                                                    /*CREATE LỊCH HẸN*/
+ #appointment input {
+     outline: none;
+     border: none
+ }
+
+#appointment  input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none
+}
+
+#appointment input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none
+}
+
+#appointment textarea {
+    outline: none;
+    border: none
+}
+
+textarea:focus, input:focus {
+    border-color: transparent !important
+}
+
+input::-webkit-input-placeholder {
+    color: #adadad
+}
+
+input:-moz-placeholder {
+    color: #adadad
+}
+
+input::-moz-placeholder {
+    color: #adadad
+}
+
+input:-ms-input-placeholder {
+    color: #adadad
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container-contact100 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.wrap-contact100 {
+    width: 720px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 55px 25px
+}
+
+.contact100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.contact100-form-title {
+    display: block;
+    width: 100%;
+    font-family: Montserrat-Black;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 13px;
+    padding: 7px 20px 7px 20px;
+    margin-bottom: 15px
+}
+
+.rs1-wrap-input100 {
+    width: calc((100% - 20px) / 2)
+}
+
+.label-input100 {
+    font-family: Montserrat-SemiBold;
+    font-size: 9px;
+    color: #393939;
+    line-height: 1.5;
+    text-transform: uppercase
+}
+
+.input100 {
+    display: block;
+    width: 100%;
+    background: 0 0;
+    font-family: Montserrat-SemiBold;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.2;
+    padding-right: 15px
+}
+
+.container-contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    width: 100%
+}
+
+.contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 25px;
+    border: solid 1px var(--black-color);
+    font-family: Montserrat-Medium;
+    font-size: 18px;
+    color: var(--black-color);
+    line-height: 1.2;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
+}
+
+.contact100-form-btn i {
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
+}
+
+.contact100-form-btn:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.contact100-form-btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
