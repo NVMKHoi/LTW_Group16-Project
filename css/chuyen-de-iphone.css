@@ -219,3 +219,125 @@ footer .copyright {
 }
 
 
+/*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*/
+tr, td {
+    border: 1px solid #353535;
+    border-collapse: separate;
+    text-align: center;
+    border-radius: 4px;
+}
+.bang-gia table, tr, td {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.problem {
+    margin: 5px;
+}
+
+.problem a {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*.problem td:hover {*/
+/*    background: var(--main-color);*/
+/*}*/
+
+/*.problem td:hover img {*/
+/*   opacity: 0.2;*/
+/*}*/
+.problem td:hover {
+    background-image:linear-gradient(var(--main-color), var(--white-color));
+    /*background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+}
+
+.problem td:hover a {
+
+    color: var(--white-color);
+}
+
+.bang-gia a {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.bang-gia td:hover {
+    background-color: var(--main-color);
+}
+
+.bang-gia td:hover a{
+    color: var(--white-color);
+}
+
+.bang-gia {
+    margin: 5px;
+
+}
+
+.problem tr:nth-child(even) {
+    background-color: var(--main-color);
+
+}
+
+.bang-gia tr:nth-child(even) {
+    background-color: #dddddd;
+}
+div.text {
+    overflow: auto;
+}
+div.text h1{
+    line-height: 140px;
+    height: 140px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    margin: 5px;
+    background-image: linear-gradient(to right, var(--main-color), var(--white-color));
+}
+
+div.text img {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 240px;
+    z-index: 0;
+
+}
+
+.i-content p{
+    line-height: 1.5;
+    font-size: 23px;
+    width: 800px;
+    text-align: justify;
+}
+
+div.social-btn ul {
+    position: fixed;
+    right:0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 65px;
+    top: 45%;
+}
+div.social-btn li {
+    background-color: var(--main-color);
+    margin-top: 10px;
+}
+
+div.social-btn li i {
+    display: block;
+    color: var(--white-color);
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+
+div.social-btn li:hover {
+    background-color: var(--main-color);
+    opacity:0.6;
+    cursor:pointer;
+
+}
