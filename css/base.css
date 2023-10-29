@@ -36,6 +36,7 @@ html {
 
 p {
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 li {
