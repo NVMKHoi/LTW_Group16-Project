@@ -1,8 +1,7 @@
-/* header-top */
-
 .header-top .container {
     display: flex;
     justify-content: space-between;
+    /*position: fixed;*/
     height: 110px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -21,24 +20,28 @@
     display: flex;
     justify-content: center;
     height: 50px;
-    width: 360px;
+    width: 210px;
     padding-top: 10px;
 }
 
 
 .header-top .search input {
+    margin-left: 40px;
+    flex: 1;
     background-color: #f2f2f2;
     border-style: none;
     height: 50px;
-    width: 310px;
+    width: 90px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 25px 0 0 25px;
     outline: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .header-top .search button {
+    margin-right: 40px;
+    flex: 1;
     background-color: #f2f2f2;
     border-style: none;
     height: 50px;
@@ -50,29 +53,35 @@
 
 .header-top .login {
     flex: 1;
+    margin-top: 25px;
 }
 
 .header-top .login-btn {
-    position: absolute;
-    margin-top: 10px;
+    flex: 1;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
     color: var(--main-color);
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 15px;
-    border: 1px solid #333;
+    border: 1px solid #808080FF;
     border-radius: 5px;
 }
-
+.login-btn:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
 /* header-foot */
 
 .header-foot {
+    /*position: fixed;*/
+    /*z-index: 1;*/
     background-color: var(--main-color);
     height: 60px;
 }
 
 .navigation {
+    width: auto;
     display: flex;
 }
 
@@ -82,7 +91,8 @@
 }
 
 .header-foot .nav-item {
-    display: inline-block;
+    float: left;
+    display: block;
     padding: 19px 19px 19px 30px;
     position: relative;
 }
@@ -115,31 +125,43 @@ li.nav-item:first-child {
     color: var(--text-color);
 }
 
-.header-foot .booking {
-    padding: 10px 0 10px 30px;
+.header-foot .booking{
+    padding: 10px 8px 10px 10px;
 }
 
-.booking a {
-    background-color: #333333;
-    width: 200px;
+.booking  {
+    background-color: #1aa3ef;
     text-align: center;
     border-radius: 34px;
     font-size: 16px;
-    line-height: 40px;
-    color: var(--main-color);
+    line-height: 20px;
+    color: var(--white-color);
+    transition-timing-function: ease-in-out;
+    transition: padding 0.4s;
 }
+
+.booking:hover {
+    background-color: var(--text-color);
+    padding-right: 18px;
+    padding-left: 25px;
+    font-weight: 600;
+}
+
 .navigation ul li:hover {
     background: var(--main-color);
 }
+
 .navigation ul li:hover > ul {
     display: block;
     z-index: 1;
 }
+
 .navigation ul li {
     -webkit-transition: all.2s ease-in-out;
     -moz-transition: all.2s ease-in-out;
     transition: all.2s ease-in-out;
 }
+
 .navigation ul ul {
     display: none;
 }
@@ -214,8 +236,117 @@ footer .footer-row {
 footer .copyright {
     font-size: 1.6rem;
     color: var(--white-color);
-    padding: 20px 0px 20px;
+    padding: 20px 0 20px;
     border-top: 1px solid var(--main-color);
 }
 
 
+/*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*/
+.content {
+    border-bottom: 2px solid #b3b3b3;
+}
+
+table, tr, td {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+    text-align: center;
+}
+.bang-gia table, tr, td {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+    text-align: center;
+    /*border-radius: 4px;*/
+}
+
+.problem {
+    margin: 5px;
+}
+
+.problem a {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.problem td:hover img {
+   opacity: 0.8;
+}
+.problem td:hover {
+    background-image:linear-gradient(var(--main-color), var(--white-color));
+}
+
+.bang-gia a {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.bang-gia {
+    margin: 5px;
+}
+
+.bang-gia td {
+    width: 160px;
+}
+
+.problem tr:nth-child(even) {
+    background-color: var(--main-color);
+}
+
+.bang-gia tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+div.text {
+    overflow: auto;
+}
+
+div.text h1{
+    line-height: 145px;
+    height: 145px;
+    padding-left: 5px;
+    color: var(--white-color);
+    /*border: 1px solid var(--white-color);*/
+    margin: 5px;
+    background-image: linear-gradient(to right, var(--main-color), var(--white-color));
+}
+
+div.text img {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 905px;
+    z-index: 0;
+}
+
+.content p{
+    line-height: 1.5;
+    font-size: 18px;
+    width: 850px;
+    text-align: justify;
+}
+/*may cai nut ben phai*/
+div.side-social-btn ul {
+    position: fixed;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 65px;
+    top: 45%;
+}
+div.side-social-btn li {
+    background-color: var(--main-color);
+    margin-top: 10px;
+}
+
+div.side-social-btn li i {
+    display: block;
+    color: var(--white-color);
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+div.side-social-btn li:hover {
+    background-color: var(--main-color);
+    opacity:0.6;
+    cursor:pointer;
+}
