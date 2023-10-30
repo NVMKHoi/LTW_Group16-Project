@@ -333,7 +333,7 @@ footer .copyright {
 
 .content-column {
     flex: 2;
-    max-width: 66%;
+    max-width: 66.67%;
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -377,7 +377,7 @@ footer .copyright {
 }
 
 .content-column .product-content th, td {
-    width: 193px;
+    width: 230px;
     height: 23px;
     font-size: 16px;
     line-height: 24px;
@@ -386,7 +386,14 @@ footer .copyright {
     padding: 10px;
 }
 
+.content-column .product-content .note-text-red {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: red;
+}
+
 .empty-column {
     flex: 1;
-    max-width: 33%;
+    max-width: 33.33%;
 }
