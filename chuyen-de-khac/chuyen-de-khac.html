@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,8 +17,8 @@
         <div class="header-top">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo">
                     </a>
 
                 </div>
@@ -41,24 +41,23 @@
                             <a href="#" class="nav-item-link">SỬA CHỮA IPHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="../chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                            <a href="chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa LG</a></li>
+                                <li class="sub-item"><a href="XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a></li>
+                                <li class="sub-item"><a href="OPPO/oppo.html">Sửa chữa OPPO</a></li>
+                                <li class="sub-item"><a href="REALME/realme.html">Sửa chữa REALME</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
+                            <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="nav-item-link">
-                                Đặt lịch hẹn
+                            <a href="../datlich.html" class="nav-item-link">ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
                         </li>
@@ -69,79 +68,76 @@
     </header>
     <!------------------------------------------------------------------------------------------------------------->
     <div class="content">
-
-
+        <!--create conct-->
+        <div id="conct">
+            <ul>
+                <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
         <div class="container">
-            <div id="conct">
-                <ul>
-                    <li><a href="#home"><i style="font-size: 40px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#news"><i style="font-size: 40px" class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#conn"><i style="font-size: 40px" class="fa fa-google" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
             <div class="home">
                 <ul>
                     <li>
                         <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
-                        <a href="chuyen-de-khac/chuyen-de-khac.html"> Đặt lịch hẹn </a>
+                        <a href=" chuyen-de-khac.html">SỬA CHỮA HÃNG KHÁC </a>
                     </li>
                 </ul>
             </div>
-            <!--            table-->
-            <div id="appointment">
-
-                <div class="container-contact100">
-                    <div><img style="float: left;width:390px;height:333px; margin-top:30px; border-radius:20px"
-                              src="images/contact/datlich.png"></div>
-                    <div class="wrap-contact100">
-                        <form class="contact100-form validate-form">
-<span class="contact100-form-title">
-ĐẶT LỊCH HẸN NGAY
-</span>
-                            <div class="wrap-input100" data-validate="Please Type Your Name">
-                                <span class="label-input100">Họ tên *</span>
-                                <input class="input100" type="text" name="name" placeholder="Nhập tên của bạn">
-                            </div>
-                            <div class="wrap-input100 validate-input bg1 rs1-wrap-input100"
-                                 data-validate="Enter Your Email (e@a.x)">
-                                <span class="label-input100">Email *</span>
-                                <input class="input100" type="text" name="email" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                <span class="label-input100">Phone</span>
-                                <input class="input100" type="text" name="phone"
-                                       placeholder="Nhập số điện thoại của bạn">
-                            </div>
-                            <div class="wrap-input100">
-                                <span class="label-input100" style="position: absolute;margin-top:9px">Chọn hãng muốn sửa chữa *</span>
-                                <select style="padding-left:20px;margin-left:140px;font-size:12px;width:430px; height:30px;border-radius:10px;border: 0;box-shadow: 0 0 1px grey ;"
-                                        class="js-select2" name="service">
-                                    <option>Options</option>
-                                    <option>Iphone</option>
-                                    <option>Samsung</option>
-                                    <option> Xiaomi</option>
-                                    <option> OPPO</option>
-                                    <option> LG</option>
-                                </select>
-                            </div>
-                            <div class="wrap-input100"
-                                 data-validate="Please Type Your Message">
-                                <span class="label-input100">Lời nhắn</span>
-                                <textarea style="height:66px" class="input100" name="message" placeholder="Hãy viết gì đó..."></textarea>
-                            </div>
-                            <div class="container-contact100-form-btn">
-                                <button class="contact100-form-btn">
-                                    <span>Đặt lịch</span>
-                                </button>
-                            </div>
-                        </form>
+            <div>
+                <span><h1>Các nhãn hàng có thể hỗ trợ </h1></span>
+            </div>
+            <div style="margin-left: 230px;margin-bottom: 30px " id="tag">
+                <div style="width: 200px;height: 289px;margin-bottom: 10px;margin-right: 50px" class="tags">
+                    <a href="XIAOMI/xiaomi.html"><img style="border-radius: 65px;" src="../images/p-another/xiao.png"
+                                                      alt="logo-xiaomi" width="175px" height="170px"></a>
+                    <div style="width: 200px;height: 50px;" class="text-logo">
+                        <span>XIAOMI</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="XIAOMI/xiaomi.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <!--------------------------------------------------------->
-
+                <div style="width: 200px;height: 289px;margin-bottom: 10px;margin-right: 50px" class="tags">
+                    <a href="OPPO/oppo.html"><img style="margin: 68px 0 46px 8px" src="../images/p-another/oppo.png"
+                                                  alt="logo-oppo" width="185px"
+                                                  height="80px"></a>
+                    <div style="width: 200px;height: 50px;" class="text-logo">
+                        <span>OPPO</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="OPPO/oppo.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div style="width: 200px;height: 289px;margin-bottom: 10px;" class="tags">
+                    <a href="REALME/realme.html"><img style="margin: 52px 13px" src="../images/p-another/rlm.png"
+                                                      alt="logo-lg"
+                                                      width="175px"
+                                                      height=90px"></a>
+                    <div style="width: 200px;height: 50px;" class="text-logo">
+                        <span>REALME</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="REALME/realme.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <!------------------------------------------------------------------------------------------------------------->
@@ -152,7 +148,7 @@
                     <div class="nav-column-logo">
                         <div class="logo">
                             <a href="#">
-                                <img src="images/logo.png" alt="logo">
+                                <img src="../images/logo.png" alt="logo">
                             </a>
                         </div>
                         <div class="address">
