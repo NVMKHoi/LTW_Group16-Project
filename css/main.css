@@ -100,7 +100,7 @@
 }
 
 .navigation ul li:hover{background: var(--main-color);}
-.navigation ul li:hover > ul{display: block;}
+.navigation ul li:hover > ul{display: block; z-index: 1;}
 .navigation ul li{
     /*float: left;*/
     -webkit-transition: all .2s ease-in-out;
@@ -140,24 +140,43 @@ li.nav-item:first-child {
     color: var(--text-color);
 }
 
-.header-foot .booking {
+/*.booking {*/
+/*    flex: 1;*/
+/*}*/
 
-}
+/*.booking-btn {*/
+/*    position: absolute;*/
+/*    margin-top: 10px;*/
+/*    margin-left: 186px;*/
+/*    text-decoration: none;*/
+/*    font-size: 20px;*/
+/*    font-weight: 500;*/
+/*    color: var(--main-color);*/
+/*    background-color: #fff;*/
+/*    padding: 8px;*/
+/*    border: 1px solid #333;*/
+/*    border-radius: 5px;*/
+/*}*/
+/*.booking:hover{*/
+/*    background: var(--main-color);*/
+/*    color: var(--white-color);*/
+/*}*/
+/*.header-foot .booking {*/
+/*}*/
 
-.booking a {
-    /*position: absolute;*/
-    background-color: var(--book-color);
-    width: 140px;
-    height: 40px;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 60px;
-    margin-left:196px;
-    padding: 10px 18px;
-    color: var(--white-color);
-}
-.booking a:hover{background: darkslategrey}
+/*.booking a {*/
+/*    background-color: var(--book-color);*/
+/*    width: 140px;*/
+/*    height: 40px;*/
+/*    text-align: center;*/
+/*    border-radius: 20px;*/
+/*    font-size: 16px;*/
+/*    line-height: 60px;*/
+/*    margin-left:196px;*/
+/*    padding: 10px 18px;*/
+/*    color: var(--white-color);*/
+/*}*/
+/*.booking:hover{background: darkslategrey}*/
 
 /* footer */
 
@@ -242,6 +261,7 @@ footer .copyright {
     width: 400px;
     height: 40px;
 }
+
 .home ul li a{
     color: var(--main-color);
     font-weight: lighter;
@@ -250,86 +270,108 @@ footer .copyright {
                                                     /*create tag in chuyen-de-khac*/
 #tag{
     display: flex;
-    margin: 30px 0;
+    margin: 30px 0 10px 0;
 }
+
 .tags{
     box-shadow: 0 0 3px var(--text-color);
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 270px;
     margin-right: 20px;
     border-radius: 10px;
 }
+
 .tags img{
     margin: 12px;
-
 }
+
 .text-logo{
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
     border-top:solid 1px darkgrey;
     text-align: center;
     font-size: 16px;
     padding-top: 15px;
 }
-#tag .tags .text-xm{
-    color: var(--white-color);
-    width: 90px;
-    height: 30px;
-    background: var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 6px;
-    margin-left:55px;
-    font-size: 10px;
+
+.text-xm{
+    justify-content: center;
+    width: 100%;
 }
-#tag .tags .xm{
-    color: var(--main-color);
-    width: 150px;
+
+.text-xm-btn{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 51px;
+    width: 100%;
     height: 40px;
-    background: var(--white-color);
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 12px;
-    margin-left: 26px;
-    margin-top: 132px;
-    font-size: 15px;
+    background-color: var(--main-color);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    box-shadow: 0 0 3px var(--text-color);
+    /*border-top: grey 1px solid;*/
+    /*border-bottom: none;*/
+    /*border-left: none;*/
+    /*border-right: none;*/
+    font-size: 14px;
+    color: var(--white-color);
+    line-height: 1.2;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
 }
-                                                    /*create conct*/
+
+.text-xm-btn:hover{background: var(--white-color); color: var(--main-color)}
+
+/*.text-xm a:hover{color: var(--main-color);}*/
+
+#tag .tags .text-xm a{
+    font-size: 12px;
+}
+                                            /*create conct*/
+#conct {
+    right: 0;
+    position: fixed;
+}
+
 #conct ul {
      list-style-type: none;
      margin: 0;
      padding: 0;
      width: 55px;
- }
+}
+
 #conct li {
     text-align: center;
     background: var(--main-color);
     height: 55px;
-    padding-top: 1px;
-    margin: 7px 0;
-
 }
+
 #conct li a {
     display: block;
     color: var(--white-color);
     text-decoration: none;
+    padding-top: 13px;
+    margin-top: 7px;
 }
-#conct li:last-child {
-    border-bottom: none;
+
+#conct ul li:hover{background: var(--white-color);}
+#conct ul li:hover > ul{display: block;}
+#conct ul li{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-#conct li:hover{
-    position: relative;
-    background: white;
-    border: 1px solid var(--black-color);
-}
-#conct li a:hover{
-    color: black;
-}
-#conct {
-    position: fixed;
-    margin-left: 1108px;
-}
+
+#conct ul li a:hover{color: var(--main-color);}
+
                                                     /*CREATE LỊCH HẸN*/
  #appointment input {
      outline: none;
@@ -472,7 +514,7 @@ button:hover {
     align-items: center;
     padding: 0 20px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: var(--white-color);
     border-radius: 25px;
     border: solid 1px var(--black-color);
@@ -505,4 +547,60 @@ button:hover {
     -o-transform: translateX(10px);
     transform: translateX(10px)
 }
+.column{
+    display: flex;
+}
+                                                    /*in of*/
+.details{
+    flex: 2;
+    max-width: 66%;
+}
+.details li{
+    font-size: 16px;
+    list-style-type:disc;
+    line-height: 2.0;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: justify;
+}
+.details img{
+    height: 240px;
+    width: 160px;
+}
+.details table,th {
+    border: solid 1px red;
+    border-collapse: collapse;
+}
+.price table,th,td{
+    border-collapse: collapse;
+    border: lightgrey 1px solid;
+    width: 730px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+                                                    /*empty-column*/
+.empty{
+    flex: 1;
+    max-width: 34%;
+    color: red;
+}
+                                                    /*body-top*/
+ .b-top{
+     margin: 10px 0 40px 0;
+ }
+.b-top div {
+    width: 1110px;
+    height: 120px;
+    background: var(--main-color);
+    background-image: linear-gradient(to left, var(--main-color), lightgoldenrodyellow);
+}
+.b-top img{
+    width: 230px;
+    height: 110px;
+    margin-left: 50px;
+    padding-top:10px;
+
+}
+
 
