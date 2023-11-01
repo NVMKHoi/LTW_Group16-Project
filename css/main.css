@@ -1,5 +1,3 @@
-/* header-top */
-
 .header-top .container {
     display: flex;
     justify-content: space-between;
@@ -21,24 +19,27 @@
     display: flex;
     justify-content: center;
     height: 50px;
-    width: 360px;
+    width: 210px;
     padding-top: 10px;
 }
 
-
 .header-top .search input {
+    margin-left: 40px;
+    flex: 1;
     background-color: #f2f2f2;
     border-style: none;
     height: 50px;
-    width: 310px;
+    width: 90px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 25px 0 0 25px;
     outline: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .header-top .search button {
+    margin-right: 40px;
+    flex: 1;
     background-color: #f2f2f2;
     border-style: none;
     height: 50px;
@@ -50,9 +51,11 @@
 
 .header-top .login {
     flex: 1;
+    margin-top: 25px;
 }
 
 .header-top .login-btn {
+    flex: 1;
     position: absolute;
     margin-top: 15px;
     margin-left: 185px;
@@ -60,8 +63,8 @@
     font-size: 20px;
     font-weight: 500;
     color: var(--main-color);
-    background-color: #fff;
-    padding: 10px;
+    background-color: var(--white-color);
+    padding: 15px;
     border: 1px solid #333;
     border-radius: 5px;
 }
@@ -70,14 +73,19 @@
     color: var(--white-color);
 }
 
-/* header-foot */
+.login-btn:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
 
+/* header-foot */
 .header-foot {
     background-color: var(--main-color);
     height: 60px;
 }
 
 .navigation {
+    width: auto;
     display: flex;
 }
 
@@ -87,7 +95,8 @@
 }
 
 .header-foot .nav-item {
-    display: inline-block;
+    float: left;
+    display: block;
     padding: 19px 19px 19px 30px;
     position: relative;
 }
@@ -132,8 +141,55 @@ li.nav-item:first-child {
     color: var(--text-color);
 }
 
-/* footer */
 
+.header-foot .booking {
+    padding: 10px 8px 10px 10px;
+}
+
+.booking {
+    background-color: #1aa3ef;
+    text-align: center;
+    border-radius: 34px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white-color);
+    transition-timing-function: ease-in-out;
+    transition: padding 0.4s;
+}
+
+.booking:hover a {
+    color: var(--white-color);
+}
+
+.booking:hover {
+    background-color: var(--text-color);
+    padding-right: 18px;
+    padding-left: 25px;
+    font-weight: 600;
+}
+
+.navigation ul li:hover {
+    background: #f49300;
+}
+
+.navigation ul li:hover .sub-item:hover a {
+    color: var(--white-color);
+}
+
+.sub-item {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.navigation ul li:hover > ul {
+    display: block;
+    z-index: 1;
+}
+
+.navigation ul ul {
+    display: none;
+}
+
+/* footer */
 footer {
     left: 0;
     bottom: 0;
@@ -202,7 +258,7 @@ footer .footer-row {
 footer .copyright {
     font-size: 1.6rem;
     color: var(--white-color);
-    padding: 20px 0px 20px;
+    padding: 20px 0 20px;
     border-top: 1px solid var(--main-color);
 }
 
@@ -222,7 +278,7 @@ footer .copyright {
     font-size:13px ;
 }
                                                     /*create tag in chuyen-de-khac*/
-#tag{
+.tag{
     display: flex;
     margin: 30px 0 10px 0;
 }
@@ -247,13 +303,12 @@ footer .copyright {
     font-size: 16px;
     padding-top: 15px;
 }
-
-.text-xm{
+.text-xm {
     justify-content: center;
     width: 100%;
 }
 
-.text-xm-btn{
+.text-xm-btn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -265,14 +320,10 @@ footer .copyright {
     width: 100%;
     height: 40px;
     background-color: var(--main-color);
-    border-bottom-left-radius: 10px ;
-    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: none;
     box-shadow: 0 0 3px var(--text-color);
-    /*border-top: grey 1px solid;*/
-    /*border-bottom: none;*/
-    /*border-left: none;*/
-    /*border-right: none;*/
     font-size: 14px;
     color: var(--white-color);
     line-height: 1.2;
@@ -282,24 +333,27 @@ footer .copyright {
     transition: all .4s
 }
 
-.text-xm-btn:hover{background: var(--white-color); color: var(--main-color)}
+.text-xm-btn:hover {
+    background: var(--white-color);
+    color: var(--main-color)
+}
 
-/*.text-xm a:hover{color: var(--main-color);}*/
-
-#tag .tags .text-xm a{
+.tags .text-xm a {
     font-size: 12px;
 }
-                                            /*create conct*/
+
+/*create conct*/
+
 #conct {
     right: 0;
     position: fixed;
 }
 
 #conct ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     width: 55px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 55px;
 }
 
 #conct li {
@@ -307,7 +361,6 @@ footer .copyright {
     background: var(--main-color);
     height: 55px;
 }
-
 #conct li a {
     display: block;
     color: var(--white-color);
@@ -316,29 +369,37 @@ footer .copyright {
     margin-top: 7px;
 }
 
-#conct ul li:hover{background: var(--white-color);}
-#conct ul li:hover > ul{display: block;}
-#conct ul li{
+#conct ul li:hover {
+    background: var(--white-color);
+}
+
+#conct ul li:hover > ul {
+    display: block;
+}
+
+#conct ul li {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-#conct ul li a:hover{color: var(--main-color);}
+#conct ul li a:hover {
+    color: var(--main-color);
+}
 
-                                                    /*CREATE LỊCH HẸN*/
- #appointment input {
-     outline: none;
-     border: none
- }
+/*CREATE LỊCH HẸN*/
+#appointment input {
+    outline: none;
+    border: none
+}
 
-#appointment  input[type=number] {
+#appointment input[type=number] {
     -moz-appearance: textfield;
     appearance: none;
     -webkit-appearance: none
 }
 
-#appointment input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+#appointment input[type=number]::-webkit-outer-spin-button, .input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none
 }
 
@@ -347,27 +408,27 @@ footer .copyright {
     border: none
 }
 
-textarea:focus, input:focus {
+.textarea:focus, .input:focus {
     border-color: transparent !important
 }
 
-input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
     color: #adadad
 }
 
-input:-moz-placeholder {
+.input:-moz-placeholder {
     color: #adadad
 }
 
-input::-moz-placeholder {
+.input::-moz-placeholder {
     color: #adadad
 }
 
-input:-ms-input-placeholder {
+.input:-ms-input-placeholder {
     color: #adadad
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
 }
 
@@ -472,7 +533,6 @@ button:hover {
     background-color: var(--white-color);
     border-radius: 25px;
     border: solid 1px var(--black-color);
-    font-family: Montserrat-Medium;
     font-size: 18px;
     color: var(--black-color);
     line-height: 1.2;
@@ -501,31 +561,37 @@ button:hover {
     -o-transform: translateX(10px);
     transform: translateX(10px)
 }
-.column{
+
+.column {
     display: flex;
 }
-                                                    /*in of*/
-.details{
+
+/*in of*/
+
+.details {
     flex: 2;
     max-width: 66%;
 }
-.details li{
+
+.details li {
     font-size: 16px;
-    list-style-type:disc;
+    list-style-type: disc;
     line-height: 2.0;
     font-weight: 400;
     color: var(--text-color);
     text-align: justify;
 }
-.details img{
+
+.details img {
     height: 240px;
     width: 160px;
 }
-.details table,th {
-    border: solid 1px red;
+
+.details table, th {
     border-collapse: collapse;
 }
-.price table,th,td{
+
+.price table, th, td {
     border-collapse: collapse;
     border: lightgrey 1px solid;
     width: 730px;
@@ -533,28 +599,139 @@ button:hover {
     text-align: center;
     font-size: 16px;
 }
-                                                    /*empty-column*/
-.empty{
+
+/*empty-column*/
+.empty {
     flex: 1;
     max-width: 34%;
     color: red;
 }
-                                                    /*body-top*/
- .b-top{
-     margin: 10px 0 40px 0;
- }
+
+/*body-top*/
+.b-top {
+    margin: 10px 0 40px 0;
+}
+
 .b-top div {
     width: 1110px;
     height: 120px;
     background: var(--main-color);
     background-image: linear-gradient(to left, var(--main-color), lightgoldenrodyellow);
 }
-.b-top img{
+
+.b-top img {
     width: 230px;
     height: 110px;
     margin-left: 50px;
-    padding-top:10px;
+    padding-top: 10px;
 
 }
 
+/*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*/
+.content {
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.problem table, tr, td {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+}
+
+.bang-gia table, tr, td {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.problem {
+    margin: 5px;
+}
+
+.problem a {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.problem td:hover img {
+    opacity: 0.8;
+}
+
+.problem td:hover {
+    background-image: linear-gradient(var(--main-color), var(--white-color));
+}
+
+.bang-gia a {
+    color: var(--text-color);
+}
+
+.bang-gia {
+    margin: 5px;
+}
+
+.bang-gia td {
+    width: 160px;
+}
+
+.problem tr:nth-child(even) {
+    background-color: var(--main-color);
+}
+
+.bang-gia tr:nth-child(even) {
+        background-color: #dddddd;
+}
+
+.content div.text {
+    overflow: auto;
+}
+
+.content div.text h1 {
+    line-height: 145px;
+    padding-left: 5px;
+    color: var(--white-color);
+    margin: 5px;
+    background-image: linear-gradient(to right, var(--main-color), var(--white-color));
+}
+
+.content div.text img {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 905px;
+    z-index: 0;
+}
+
+.content p {
+        line-height: 1.5;
+        font-size: 18px;
+        width: 850px;
+        text-align: justify;
+}
+/*may cai nut ben phai*/
+.side-social-btn ul {
+        position: fixed;
+        right: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 65px;
+        top: 45%;
+}
+
+.side-social-btn li {
+        background-color: var(--main-color);
+        margin-top: 10px;
+}
+
+.side-social-btn li i {
+        display: block;
+        color: var(--white-color);
+        padding: 16px 16px;
+        text-decoration: none;
+}
+
+.side-social-btn li:hover {
+        background-color: var(--main-color);
+        opacity: 0.6;
+        cursor: pointer;
+}
 
