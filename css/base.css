@@ -25,6 +25,8 @@ html {
     margin-left: auto;
 }
 
+.container {}
+
 .container__full-width {
     width: 100%;
 }
