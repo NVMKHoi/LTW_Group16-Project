@@ -278,7 +278,7 @@ footer .copyright {
     font-size:13px ;
 }
                                                     /*create tag in chuyen-de-khac*/
-#tag{
+.tag{
     display: flex;
     margin: 30px 0 10px 0;
 }
@@ -338,8 +338,7 @@ footer .copyright {
     color: var(--main-color)
 }
 
-
-#tag .tags .text-xm a {
+.tags .text-xm a {
     font-size: 12px;
 }
 
@@ -588,12 +587,11 @@ footer .copyright {
     width: 160px;
 }
 
-.details table th {
-    border: solid 1px red;
+.details table, th {
     border-collapse: collapse;
 }
 
-.price table th td {
+.price table, th, td {
     border-collapse: collapse;
     border: lightgrey 1px solid;
     width: 730px;
@@ -634,7 +632,7 @@ footer .copyright {
     border-bottom: 2px solid #b3b3b3;
 }
 
-table, tr, td {
+.problem table, tr, td {
     border: 1px solid #353535;
     border-collapse: collapse;
 }
