@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -45,83 +44,92 @@
                             <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="xiaomi.html">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="lg.html">Sửa chữa LG</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa LG</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
+                            <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="datlich.html" class="nav-item-link">
+                                Đặt lịch hẹn
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </li>
                     </ul>
-                    <div class="booking">
-                        <a href="#">
-                            Đặt lịch hẹn
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!------------------------------------------------------------------------------------------------------------->
     <div class="content">
-        <div class="container">
 
-            <div class="home">
+
+        <div class="container">
+            <div id="conct">
                 <ul>
-                    <li ><a href=" chuyen-de-khac.html">SỬA CHỮA HÃNG KHÁC</a></li>
-                    <li>/ Xiaomi</li>
+                    <li><a href="#home"><i style="font-size: 40px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#news"><i style="font-size: 40px" class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#conn"><i style="font-size: 40px" class="fa fa-google" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-
-            <div style="margin-top:40px">
-                <span><h1>Các nhãn hàng được hỗ trợ </h1></span>
+            <div class="home">
+                <ul>
+                    <li>
+                        <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
+                        <a href="chuyen-de-khac/chuyen-de-khac.html"> Liên hệ </a>
+                    </li>
+                </ul>
             </div>
-            <div id="tag">
-                <div class="tags">
-                    <a href="xiaomi.html"><img style="border-radius: 65px;" src="images/xiao.png"
-                                               alt="logo-xiaomi" width="170px" height="170px"></a>
-                    <div class="text-logo">
-                        <span>XIAOMI</span>
-                    </div>
-                    <div class="text-xm">
-                        <a href="xiaomi.html"><span>XEM THÊM</span></a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="oppo.html"><img src="images/oppo.png" alt="logo-oppo" width="170px"
-                                             height="170px"></a>
-                    <div class="text-logo">
-                        <span>OPPO</span>
-                    </div>
-                    <div class="text-xm">
-                        <a href="oppo.html"><span>XEM THÊM</span></a>
-                    </div>
-                </div>
-                <div class="tags">
-                    <a href="lg.html"><img src="images/lg.png" alt="logo-lg" width="175px"
-                                           height="170px"></a>
-                    <div class="text-logo">
-                        <span>LG</span>
-                    </div>
-                    <div class="text-xm">
-                        <a href="lg.html"><span>XEM THÊM</span></a>
-                    </div>
-                </div>
-                <div class="tags" style="background: var(--main-color)">
-                    <a href="#"><div class="xm">
-                        <i class="fa fa-arrow-right"></i>
-                        <span>Xem thêm</span>
-                        <i class="fa fa-arrow-left"></i>
-                    </div></a>
-                </div>
-            </div>
+            <!--            table-->
+            <div id="appointment">
 
+                <div class="container-contact100">
+                    <div><img style="float: left;width:390px;height:390px; margin-top:30px; border-radius:20px"
+                              src="images/contact/tomm.jpg"></div>
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form">
+<span class="contact100-form-title">
+Liên hệ chúng tôi ngay để được hỗ trợ
+</span>
+                            <div class="wrap-input100" data-validate="Please Type Your Name">
+                                <span class="label-input100">Họ tên *</span>
+                                <input class="input100" type="text" name="name" placeholder="Nhập tên của bạn">
+                            </div>
+                            <div class="wrap-input100 validate-input bg1 rs1-wrap-input100"
+                                 data-validate="Enter Your Email (e@a.x)">
+                                <span class="label-input100">Email *</span>
+                                <input class="input100" type="text" name="email" placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                                <span class="label-input100">Phone</span>
+                                <input class="input100" type="text" name="phone"
+                                       placeholder="Nhập số điện thoại của bạn">
+                            </div>
+                            <div class="wrap-input100"
+                                 data-validate="Please Type Your Message">
+                                <span class="label-input100">Lời nhắn</span>
+                                <textarea style="height:103px" class="input100" name="message" placeholder="Hãy viết gì đó..."></textarea>
+                            </div>
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn">
+                                    <span>Gửi <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--------------------------------------------------------->
+
+            </div>
         </div>
     </div>
     <!------------------------------------------------------------------------------------------------------------->
@@ -185,5 +193,7 @@
         </div>
     </footer>
 </div>
+
+
 </body>
 </html>
