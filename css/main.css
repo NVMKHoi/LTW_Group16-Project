@@ -58,7 +58,6 @@
 
 .header-top .login-btn {
     flex: 1;
-    position: absolute;
     margin-top: 15px;
     margin-left: 185px;
     text-decoration: none;
@@ -288,13 +287,6 @@ footer .copyright {
 .home {
     display: flex;
     position: relative;
-}
-
-.home ul li a {
-    position: absolute;
-    color: var(--main-color);
-    font-weight: lighter;
-    font-size: 14px;
 }
 
 /*create line return*/
@@ -791,11 +783,80 @@ footer .copyright {
     padding: 0 8px;
 }
 
+.product-services {
+    background-color: var(--main-color);
+    display: flex;
+    padding: 20px 18px;
+    margin: 0 0 30px;
+}
+
+.product-headline {
+    padding-left: 30px;
+    width: calc(100% - 250px);
+    color: var(--white-color);
+}
+
+.product-headline h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.product-headline p {
+    font-size: 1.4rem;
+    line-height: 22px;
+    padding: 14px 0;
+}
+
+.product-services .product-thumb img {
+    height: auto;
+    width: 100%;
+}
+
 .content_row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: 20px;
+}
+
+.problem-list .problem-title h2 {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.content_row .problem-item {
+    flex: 5;
+    max-width: 20%;
+    display: table-cell;
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.content_row .problem-item img {
+    height: 128px;
+    width: 128px;
+}
+
+.content_row .problem-item .problem-thumb {
+    margin-bottom: 20px;
+}
+
+.content_row .problem-item .problem-info h3 {
+    margin: 0 0 10px;
+}
+
+.content_row .problem-item .problem-info a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.content_row .problem-item .problem-info .viewmore {
+    color: var(--main-color);
 }
 
 .content-column {
@@ -866,3 +927,4 @@ footer .copyright {
     flex: 1;
     max-width: 33.33%;
 }
+
