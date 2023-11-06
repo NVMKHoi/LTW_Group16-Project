@@ -887,7 +887,7 @@ footer .copyright {
     font-weight: 400;
     line-height: 30px;
     color: var(--main-color);
-
+    margin: 0 0 5px 0;
 }
 
 .content-column .product-content ul {
@@ -904,16 +904,21 @@ footer .copyright {
 
 .content-column .product-content table {
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 .content-column .product-content th, td {
-    width: 230px;
+    width: auto;
     height: 23px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     border: solid 1px rgba(0, 0, 0, .1);
     padding: 10px;
+}
+
+.content-column .product-content td:last-child {
+    text-align: left;
 }
 
 .content-column .product-content .note-text-red {
@@ -926,5 +931,13 @@ footer .copyright {
 .empty-column {
     flex: 1;
     max-width: 33.33%;
+}
+
+.content_row .product-content .bank-logo img {
+    width: auto;
+    height: 80px;
+    padding: 20px 10px;
+    border: solid 1px #b3b3b3;
+    margin-bottom: 10px;
 }
 
