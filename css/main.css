@@ -26,7 +26,7 @@
 }
 
 .header-top .search input {
-    margin-left: 40px;
+    margin-left: 15px;
     flex: 1;
     background-color: #f2f2f2;
     border-style: none;
@@ -40,8 +40,7 @@
 }
 
 .header-top .search button {
-    margin-right: 40px;
-    flex: 1;
+    margin-right: 15px;
     background-color: #f2f2f2;
     border-style: none;
     height: 50px;
@@ -57,8 +56,6 @@
 }
 
 .header-top .login-btn {
-    flex: 1;
-    margin-top: 15px;
     margin-left: 185px;
     text-decoration: none;
     font-size: 20px;
@@ -773,7 +770,6 @@ footer .copyright {
 .breadcrumb .breadcrumb-item {
     padding: 15px 0;
     font-size: 1.4rem;
-    font-weight: 400;
     color: var(--text-color);
 }
 
@@ -781,6 +777,10 @@ footer .copyright {
     height: 14px;
     color: var(--black-color);
     padding: 0 8px;
+}
+
+.breadcrumb a {
+    color: var(--black-color);
 }
 
 .product-services {
@@ -815,7 +815,6 @@ footer .copyright {
 
 .content_row {
     display: flex;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     margin-bottom: 20px;
@@ -908,7 +907,7 @@ footer .copyright {
 }
 
 .content-column .product-content th, td {
-    width: auto;
+    width: 230px;
     height: 23px;
     font-size: 16px;
     line-height: 24px;
@@ -917,11 +916,16 @@ footer .copyright {
     padding: 10px;
 }
 
-.content-column .product-content td:last-child {
+.content-column .product-content.policy th, td {
+    width: auto;
+}
+
+.content-column .product-content.policy td:last-child {
     text-align: left;
 }
 
 .content-column .product-content .note-text-red {
+    width: auto;
     font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
@@ -940,4 +944,50 @@ footer .copyright {
     border: solid 1px #b3b3b3;
     margin-bottom: 10px;
 }
+
+.about-us {
+    padding: 60px 0;
+}
+
+.content_row .about-column {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 40px;
+}
+
+.content_row .about-column h1 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+.content_row .about-column p {
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: var(--text-color);
+    margin: 0 0 20px;
+    width: auto;
+}
+
+.content_row .about-column .slogan {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black-color);
+    padding: 0 10px 0;
+}
+
+.content_row .about-pic-column {
+    flex: 1;
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.content_row .about-pic-column img {
+    height: 350px;
+    width: auto;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+}
+
 
