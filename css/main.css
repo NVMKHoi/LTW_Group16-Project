@@ -171,7 +171,7 @@ li.nav-item:first-child {
     text-align: center;
     border-radius: 34px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     color: var(--white-color);
     transition-timing-function: ease-in-out;
     transition: padding 0.4s;
@@ -288,13 +288,6 @@ footer .copyright {
 .home {
     display: flex;
     position: relative;
-}
-
-.home ul li a {
-    position: absolute;
-    color: var(--main-color);
-    font-weight: lighter;
-    font-size: 14px;
 }
 
 /*create line return*/
@@ -677,6 +670,10 @@ footer .copyright {
     text-align: center;
 }
 
+.problem table td {
+    height: 100px;
+}
+
 .problem {
     margin: 5px;
 }
@@ -768,6 +765,32 @@ footer .copyright {
     background-color: var(--main-color);
     opacity: 0.6;
     cursor: pointer;
+}
+
+/*--------faq---------*/
+.text_box {
+    color: var(--text-color);
+    margin: 10px;
+    border: 1px solid #bebebe;
+    box-shadow: 7px 7px 5px #c7c7c7;
+}
+
+.text_box p {
+    text-align: left;
+}
+
+.text_box li:hover a {
+    color: var(--main-color);
+}
+
+.text_box a {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.text_box img {
+    border: 1px solid black;
+    margin: 5px 0 5px;
 }
 
 /*CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK-*/
