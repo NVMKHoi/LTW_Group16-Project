@@ -659,9 +659,72 @@ footer .copyright {
     border-bottom: 2px solid #b3b3b3;
 }
 
-.problem table, tr, td {
-    border: 1px solid #353535;
-    border-collapse: collapse;
+div .card-container {
+    margin: 5px;
+    display: flex;
+}
+/*--------------------------------------------------------------------*/
+div .problem-card-logo {
+    flex: 1;
+}
+
+div .card-container .problem-card-logo {
+    width: 205px;
+    height: 210px;
+    transition: 0.3s;
+    text-align: center;
+    background-image: radial-gradient(var(--main-color), #ffffff);
+}
+/*--------------------------------------------------------------------*/
+div .problem-card {
+    flex: 1;
+    margin-right: 20px;
+}
+
+div .problem-card b{
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+div .card-container .problem-card {
+    width: 203px;
+    height: 255px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #8d8d8d;
+}
+
+div .card-container .problem-card:hover {
+    box-shadow: 0 4px 16px 0 #797979;
+
+}
+
+div .card-container .context {
+    padding: 2px 16px;
+    background: var(--main-color);
+}
+
+div .extra-btn {
+    text-align: center;
+    margin: 25px;
+}
+
+.e-btn {
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 34px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white-color);
+}
+
+.e-btn:hover {
+    background-color: var(--text-color);
+    font-weight: 600;
+}
+
+.e-btn {
+    padding: 10px 8px 10px 10px;
 }
 
 .bang-gia table, tr, td {
@@ -670,42 +733,12 @@ footer .copyright {
     text-align: center;
 }
 
-.problem table td {
-    height: 100px;
-}
-
-.problem {
-    margin: 5px;
-}
-
-.problem a {
-    color: var(--white-color);
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.problem td:hover img {
-    opacity: 0.8;
-}
-
-.problem td:hover {
-    background-image: linear-gradient(var(--main-color), var(--white-color));
-}
-
 .bang-gia a {
     color: var(--text-color);
 }
 
-.bang-gia {
-    margin: 5px;
-}
-
 .bang-gia td {
     width: 160px;
-}
-
-.problem tr:nth-child(even) {
-    background-color: var(--main-color);
 }
 
 .bang-gia tr:nth-child(even) {
@@ -717,25 +750,15 @@ footer .copyright {
 }
 
 .content div.text h1 {
-    line-height: 145px;
-    padding-left: 5px;
-    color: var(--white-color);
-    margin: 5px;
-    background-image: linear-gradient(to right, var(--main-color), var(--white-color));
-}
-
-.content div.text img {
-    position: absolute;
-    margin-top: 8px;
-    margin-left: 905px;
-    z-index: 0;
+    color: var(--text-color);
 }
 
 .content p {
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
     width: 850px;
     text-align: justify;
+    margin: 5px;
 }
 
 /*may cai nut ben phai*/
