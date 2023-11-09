@@ -660,10 +660,16 @@ footer .copyright {
 }
 
 div .card-container {
-    margin: 5px;
+    margin: 10px;
     display: flex;
 }
+
+div .soon {
+    opacity: 0.7;
+}
+
 /*--------------------------------------------------------------------*/
+
 div .problem-card-logo {
     flex: 1;
 }
@@ -671,17 +677,19 @@ div .problem-card-logo {
 div .card-container .problem-card-logo {
     width: 205px;
     height: 210px;
-    transition: 0.3s;
     text-align: center;
     background-image: radial-gradient(var(--main-color), #ffffff);
 }
+
 /*--------------------------------------------------------------------*/
+
 div .problem-card {
     flex: 1;
     margin-right: 20px;
+    position: relative;
 }
 
-div .problem-card b{
+div .problem-card b {
     font-size: 18px;
     color: var(--white-color);
 }
@@ -689,14 +697,13 @@ div .problem-card b{
 div .card-container .problem-card {
     width: 203px;
     height: 255px;
-    transition: 0.3s;
     text-align: center;
+    transition: 0.2s;
     box-shadow: 0 4px 8px 0 #8d8d8d;
 }
 
 div .card-container .problem-card:hover {
     box-shadow: 0 4px 16px 0 #797979;
-
 }
 
 div .card-container .context {
@@ -704,6 +711,18 @@ div .card-container .context {
     background: var(--main-color);
 }
 
+.overlay {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    background: #0000;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: white;
+    font-size: 20px;
+    padding: 17px;
+    text-align: center;
+}
+/*--------------------------------------------------------------------*/
 div .extra-btn {
     text-align: center;
     margin: 25px;
@@ -715,11 +734,14 @@ div .extra-btn {
     border-radius: 34px;
     font-size: 16px;
     line-height: 22px;
+    transition: 0.2s;
     color: var(--white-color);
+    box-shadow: 0 2px 4px 0 #8d8d8d;
 }
 
 .e-btn:hover {
     background-color: var(--text-color);
+    box-shadow: 0 4px 16px 0 #797979;
     font-weight: 600;
 }
 
@@ -727,14 +749,22 @@ div .extra-btn {
     padding: 10px 8px 10px 10px;
 }
 
+/*--------------------------------------------------------------------*/
+
 .bang-gia table, tr, td {
-    border: 1px solid #353535;
+    border: 2px solid #656565;
     border-collapse: collapse;
     text-align: center;
+    margin: 5px;
 }
 
 .bang-gia a {
     color: var(--text-color);
+}
+
+.bang-gia .first-line {
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .bang-gia td {
@@ -744,6 +774,8 @@ div .extra-btn {
 .bang-gia tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+/*--------------------------------------------------------------------*/
 
 .content div.text {
     overflow: auto;
@@ -761,7 +793,7 @@ div .extra-btn {
     margin: 5px;
 }
 
-/*may cai nut ben phai*/
+/*may cai nut*/
 .side-social-btn ul {
     position: fixed;
     right: 0;
@@ -794,8 +826,7 @@ div .extra-btn {
 .text_box {
     color: var(--text-color);
     margin: 10px;
-    border: 1px solid #bebebe;
-    box-shadow: 7px 7px 5px #c7c7c7;
+    box-shadow: 0 7px 7px 5px #c7c7c7;
 }
 
 .text_box p {
