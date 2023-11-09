@@ -38,27 +38,29 @@
                 <div class="navigation">
                     <ul class="nav-bar">
                         <li class="nav-item">
-                            <a href="#" class="nav-item-link">SỬA CHỮA IPHONE</a>
+                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA
+                                SAMSUNG</a>
                         </li>
                         <li class="nav-item">
                             <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa LG</a></li>
+                                    <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">SỬA CHỮA XIAOMI</a>
+                                </li>
+                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">SỬA CHỮA OPPO</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">SỬA CHỮA REALME</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="nav-item-link">
-                                Đặt lịch hẹn
+                            <a href="datlich.html" class="booking">
+                                ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
                         </li>
@@ -68,33 +70,36 @@
         </div>
     </header>
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="content">
-
-
+    <div id="conct">
+        <ul>
+            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="home">
         <div class="container">
-            <div id="conct">
-                <ul>
-                    <li><a href="#home"><i style="font-size: 40px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#news"><i style="font-size: 40px" class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#conn"><i style="font-size: 40px" class="fa fa-google" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="home">
-                <ul>
-                    <li>
-                        <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
-                        <a href="chuyen-de-khac/chuyen-de-khac.html"> Liên hệ </a>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
+                    <a href="contact.html"> Liên hệ </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
             <!--            table-->
             <div id="appointment">
 
                 <div class="container-contact100">
-                    <div><img style="float: left;width:390px;height:390px; margin-top:30px; border-radius:20px"
-                              src="images/contact/tomm.jpg"></div>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.30072492741!2d106.78271055221559!3d10.876166032644427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9f22c98344d%3A0x3b8c0790dc4f67cb!2sCareX!5e0!3m2!1svi!2s!4v1699267575521!5m2!1svi!2s"
+                                width="410" height="390" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                     <div class="wrap-contact100">
                         <form class="contact100-form validate-form">
 <span class="contact100-form-title">
@@ -110,14 +115,15 @@ Liên hệ chúng tôi ngay để được hỗ trợ
                                 <input class="input100" type="text" name="email" placeholder="Nhập email của bạn">
                             </div>
                             <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
-                                <span class="label-input100">Phone</span>
+                                <span class="label-input100">Phone*</span>
                                 <input class="input100" type="text" name="phone"
                                        placeholder="Nhập số điện thoại của bạn">
                             </div>
                             <div class="wrap-input100"
                                  data-validate="Please Type Your Message">
                                 <span class="label-input100">Lời nhắn</span>
-                                <textarea style="height:103px" class="input100" name="message" placeholder="Hãy viết gì đó..."></textarea>
+                                <textarea style="height:103px" class="input100" name="message"
+                                          placeholder="Hãy viết gì đó..."></textarea>
                             </div>
                             <div class="container-contact100-form-btn">
                                 <button class="contact100-form-btn">
@@ -181,7 +187,8 @@ Liên hệ chúng tôi ngay để được hỗ trợ
                     <div class="nav-column">
                         <div class="support">
                             <h3 class="footer-heading">Tổng đài hỗ trợ miễn phí</h3>
-                            <p>Gọi tư vấn: <a href="tel:1800.2406" style="color: #f49300">1800.2406</a> (9h00 - 21h00)
+                            <p>Gọi tư vấn: <a href="tel:1800.2406" style="color: #f49300">1800.2406</a> (9h00 -
+                                21h00)
                             </p>
                         </div>
                     </div>

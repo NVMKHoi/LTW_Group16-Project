@@ -58,7 +58,6 @@
 
 .header-top .login-btn {
     flex: 1;
-    position: absolute;
     margin-top: 15px;
     margin-left: 185px;
     text-decoration: none;
@@ -105,15 +104,7 @@
     position: relative;
 }
 
-.navigation ul li:hover {
-    background: var(--main-color);
-}
-
-.navigation ul li:hover > ul {
-    display: block;
-}
-
-.navigation ul li:hover {
+.navigation ul ul li:hover {
     background: var(--main-color);
 }
 
@@ -171,7 +162,7 @@ li.nav-item:first-child {
     text-align: center;
     border-radius: 34px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 23px;
     color: var(--white-color);
     transition-timing-function: ease-in-out;
     transition: padding 0.4s;
@@ -188,9 +179,9 @@ li.nav-item:first-child {
     font-weight: 600;
 }
 
-.navigation ul li:hover {
-    background: #f49300;
-}
+/*.navigation ul li:hover {*/
+/*    background: #f49300;*/
+/*}*/
 
 .navigation ul li:hover .sub-item:hover a {
     color: var(--white-color);
@@ -284,20 +275,11 @@ footer .copyright {
 }
 
 /*CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM------CONTENT CỦA LƯM-*/
-
+/*create line return*/
 .home {
     display: flex;
     position: relative;
 }
-
-.home ul li a {
-    position: absolute;
-    color: var(--main-color);
-    font-weight: lighter;
-    font-size: 14px;
-}
-
-/*create line return*/
 .home ul {
     margin: 0;
     padding-left: 0;
@@ -305,7 +287,6 @@ footer .copyright {
     width: 400px;
     height: 40px;
 }
-
 .home ul li a {
     color: var(--main-color);
     font-weight: lighter;
@@ -315,15 +296,17 @@ footer .copyright {
 /*create tag in chuyen-de-khac*/
 .tag {
     display: flex;
-    margin: 30px 0 10px 0;
+    margin: 30px 0 10px;
+    max-width: 22%;
 }
 
 .tags {
     box-shadow: 0 0 3px var(--text-color);
     width: 180px;
     height: 270px;
-    margin-right: 20px;
+    margin-right: 52px;
     border-radius: 10px;
+    flex: 5;
 }
 
 .tags img {
@@ -471,6 +454,7 @@ footer .copyright {
 
 .container-contact100 {
     width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -480,6 +464,7 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     background: none;
+    display: flex;
 }
 
 .wrap-contact100 {
@@ -487,7 +472,14 @@ footer .copyright {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    padding: 20px 55px 25px
+    padding: 20px 55px 25px;
+    flex:2;
+    max-width: 63%;
+    height: auto;
+}
+.maps{
+    flex: 2;
+    max-width: 37%;
 }
 
 .contact100-form {
@@ -504,7 +496,6 @@ footer .copyright {
 .contact100-form-title {
     display: block;
     width: 100%;
-    font-family: Montserrat-Black;
     font-size: 30px;
     color: #333;
     line-height: 1.2;
@@ -521,13 +512,22 @@ footer .copyright {
     margin-bottom: 15px
 }
 
+.select2{
+    padding-left:20px;
+    margin-left:150px;
+    font-size:12px;
+    width:410px;
+    height:30px;
+    border-radius:10px;
+    border:lightgrey solid 1px;
+}
+
 .rs1-wrap-input100 {
     width: calc((100% - 20px) / 2)
 }
 
 .label-input100 {
-    font-family: Montserrat-SemiBold;
-    font-size: 9px;
+    font-size: 10px;
     color: #393939;
     line-height: 1.5;
     text-transform: uppercase
@@ -537,8 +537,7 @@ footer .copyright {
     display: block;
     width: 100%;
     background: 0 0;
-    font-family: Montserrat-SemiBold;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .container-contact100-form-btn {
@@ -586,6 +585,7 @@ footer .copyright {
 .contact100-form-btn:hover {
     background-color: var(--main-color);
     color: var(--white-color);
+
 }
 
 .contact100-form-btn:hover i {
@@ -596,11 +596,10 @@ footer .copyright {
     transform: translateX(10px)
 }
 
+/*in of*/
 .column {
     display: flex;
 }
-
-/*in of*/
 
 .details {
     flex: 2;
@@ -643,22 +642,51 @@ footer .copyright {
 
 /*body-top*/
 .b-top {
-    margin: 10px 0 40px 0;
-}
-
-.b-top div {
+    display: flex;
+    margin: 10px 0 20px 0;
     width: 1110px;
-    height: 120px;
+    height: 150px;
     background: var(--main-color);
-    background-image: linear-gradient(to left, var(--main-color), lightgoldenrodyellow);
+    background-image: linear-gradient(to right, var(--main-color), lightgoldenrodyellow);
 }
 
-.b-top img {
-    width: 230px;
-    height: 110px;
-    margin-left: 50px;
-    padding-top: 10px;
+.gradient {
+    color: white;
+    text-decoration: none;
+    flex:1;
+    max-width: 30%;
+    font-size: 80px;
+    padding-top: 68px;
+    padding-left: 40px;
+}
 
+.gradient {
+    animation: colorBackground 0.5s infinite;
+    -webkit-animation: colorBackground 1s infinite;
+    -moz-animation: colorBackground 1s infinite;
+    -o-animation: colorBackground 0.5s infinite
+}
+@keyframes colorBackground {
+    0% {
+         color: var(--white-color);
+     }
+    /*10% {*/
+    /*      color: peachpuff;*/
+    /*  }*/
+    40% {
+          color: black;
+      }
+}
+
+.flex2{
+    flex: 1;
+    max-width: 70%;
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+}
+.flex2 img{
+    float: right;
 }
 
 /*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*//*content cua khui*/
