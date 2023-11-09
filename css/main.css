@@ -847,6 +847,56 @@ div .extra-btn {
     margin: 5px 0 5px;
 }
 
+/*---------check---------*/
+.track-form {
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.track-form h1 {
+    color: var(--main-color);
+}
+
+.track-input {
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    width: 400px;
+    margin: auto;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.track-input input[type=text] {
+    font-size: 13px;
+    display: block;
+    padding: 10px 5px;
+    margin: 5px auto 5px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 90%;
+}
+
+.track-input input[type=submit] {
+    font-size: 13px;
+    display: block;
+    color: var(--white-color);
+    width: 55px;
+    padding: 10px 0;
+    margin: 5px auto 5px auto;
+    background: var(--main-color);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.track-input input[type=submit]:hover {
+    box-shadow: 0 2px 8px 0 #797979;
+}
+
+
+
+
 /*CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK-*/
 
 .breadcrumb .breadcrumb-list, .breadcrumb-item {
