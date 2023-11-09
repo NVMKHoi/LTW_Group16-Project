@@ -82,38 +82,63 @@
     </div>
 
     <div class="content">
-        <div class="container">
+        <div class="slide-show">
             <div class="slide-wrapper">
+                <div class="slide" style="width:100%">
+                    <img src="images/slide1.jpg" alt="slide 1">
+                </div>
+                <div class="slide" style="width:100%">
+                    <img src="images/slide2.jpg" alt="slide 2">
+                </div>
+                <div class="slide" style="width:100%">
+                    <img src="images/slide3.jpg" alt="slide 3">
+                </div>
 
+                <a class="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
+        </div>
+        <div class="container">
             <div class="about-us">
-                <div class="content_row">
-                    <div class="about-column">
-                        <div class="about-title">
-                            <h1>VỀ CAREX</h1>
-                        </div>
-                        <div class="about-content">
-                            <p>Hoạt động từ 2023 trong lĩnh vực sửa chữa điện thoại cùng đội ngũ kĩ thuật lành nghề và
-                                giàu tâm huyết, CareX luôn đặt uy tín và sự hài lòng của khách hàng là ưu tiên hàng đầu
-                                cho tất cả hoạt động của công ty. CareX tự hào là một trong những trung tâm, hệ thống
-                                chuyên cung cấp dịch vụ sửa chữa tốt nhất tại TP.HCM. Các dịch vụ tại trung tâm luôn
-                                được đánh giá cao về chất lượng, phản hồi tốt về quy trình. Bên cạnh đó, các yếu tố khác
-                                như chi phí, chế độ bảo hành, phong cách làm việc của nhân viên cũng luôn đem tới cho
-                                khách hàng sự hài lòng, yên tâm và thoải mái. </p>
-                            <p class="slogan"><em>“Chúng tôi cam kết sẽ không lãng phí niềm tin mà khách hàng đã trao
-                                trong suốt thời gian qua”</em></p>
-                        </div>
+                <div class="about-column">
+                    <div class="about-title">
+                        <h1>Về CareX</h1>
                     </div>
-                    <div class="about-pic-column">
-                        <img src="images/about-us.jpg" alt="about us">
+                    <div class="about-content">
+                        <p>Hoạt động từ 2023 trong lĩnh vực sửa chữa điện thoại cùng đội ngũ kĩ thuật lành nghề và
+                            giàu tâm huyết, CareX luôn đặt uy tín và sự hài lòng của khách hàng là ưu tiên hàng đầu
+                            cho tất cả hoạt động của công ty. CareX tự hào là một trong những trung tâm, hệ thống
+                            chuyên cung cấp dịch vụ sửa chữa tốt nhất tại TP.HCM. Các dịch vụ tại trung tâm luôn
+                            được đánh giá cao về chất lượng, phản hồi tốt về quy trình. Bên cạnh đó, các yếu tố khác
+                            như chi phí, chế độ bảo hành, phong cách làm việc của nhân viên cũng luôn đem tới cho
+                            khách hàng sự hài lòng, yên tâm và thoải mái. </p>
+                        <p class="slogan"><em>“Chúng tôi cam kết sẽ không lãng phí niềm tin mà khách hàng đã trao
+                            trong suốt thời gian qua”</em></p>
                     </div>
+                </div>
+                <div class="about-pic-column">
+                    <img src="images/about-us.jpg" alt="about us">
                 </div>
             </div>
             <div class="img-tabs">
 
             </div>
-            <div class="rating">
+            <div class="review">
+                <div class="rating">
 
+                </div>
+                <div class="rating">
+
+                </div>
+                <div class="rating">
+
+                </div>
             </div>
         </div>
     </div>
@@ -179,6 +204,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js" ></script>
 </div>
 </body>
 </html>

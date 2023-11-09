@@ -761,6 +761,8 @@ footer .copyright {
 
 /*CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK------CONTENT CỦA LOK-*/
 
+/* breadcrumb */
+
 .breadcrumb .breadcrumb-list, .breadcrumb-item {
     padding-left: 0;
     margin: 0;
@@ -782,6 +784,8 @@ footer .copyright {
 .breadcrumb a {
     color: var(--black-color);
 }
+
+/* chuyen de samsung */
 
 .product-services {
     background-color: var(--main-color);
@@ -813,12 +817,7 @@ footer .copyright {
     width: 100%;
 }
 
-.content_row {
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: 20px;
-}
+/* loi thuong gap samsung */
 
 .problem-list .problem-title h2 {
     color: var(--text-color);
@@ -856,6 +855,15 @@ footer .copyright {
 
 .content_row .problem-item .problem-info .viewmore {
     color: var(--main-color);
+}
+
+/* noi dung chi tiet */
+
+.content_row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 20px;
 }
 
 .content-column {
@@ -945,22 +953,26 @@ footer .copyright {
     margin-bottom: 10px;
 }
 
+/* index - about us */
+
 .about-us {
-    padding: 60px 0;
+    display: flex;
+    padding: 50px 0;
 }
 
-.content_row .about-column {
+.about-us .about-column {
     flex: 1;
     max-width: 50%;
     padding: 0 40px;
 }
 
-.content_row .about-column h1 {
+.about-us .about-column h1 {
     font-size: 2.4rem;
     color: var(--main-color);
+    margin: 0 0 20px 0;
 }
 
-.content_row .about-column p {
+.about-us .about-column p {
     font-size: 1.6rem;
     line-height: 30px;
     color: var(--text-color);
@@ -968,15 +980,15 @@ footer .copyright {
     width: auto;
 }
 
-.content_row .about-column .slogan {
+.about-us .about-column .slogan {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--black-color);
-    padding: 0 10px 0;
+    padding: 0 40px 0;
 }
 
-.content_row .about-pic-column {
+.about-us .about-pic-column {
     flex: 1;
     max-width: 50%;
     margin-top: auto;
@@ -984,10 +996,83 @@ footer .copyright {
     text-align: center;
 }
 
-.content_row .about-pic-column img {
-    height: 350px;
+.about-us .about-pic-column img {
+    height: 375px;
     width: auto;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+}
+
+/* index - slideshow */
+
+.slide-show {
+    width: 1140px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+}
+
+.slide-wrapper img {
+    width: 1140px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev-btn {
+    left: 90px;
+    border-radius: 50%;
+}
+
+.next-btn {
+    right: 90px;
+    border-radius: 50%;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-show .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 
