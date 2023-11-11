@@ -84,63 +84,93 @@
     <div class="content">
         <div class="slide-show">
             <div class="slide-wrapper">
-                <div class="slide" style="width:100%">
-                    <img src="images/slide1.jpg" alt="slide 1">
+                <div class="slide fade">
+                    <img src="/images/slide1.jpg" alt="slide 1">
                 </div>
-                <div class="slide" style="width:100%">
-                    <img src="images/slide2.jpg" alt="slide 2">
+                <div class="slide fade">
+                    <img src="/images/slide2.jpg" alt="slide 2">
                 </div>
-                <div class="slide" style="width:100%">
-                    <img src="images/slide3.jpg" alt="slide 3">
+                <div class="slide fade">
+                    <img src="/images/slide3.jpg" alt="slide 3">
                 </div>
 
-                <a class="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                <div style="text-align:center">
+                <div class="dots">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="about-us">
-                <div class="about-column">
-                    <div class="about-title">
-                        <h1>Về CareX</h1>
+
+        <div class="about-wrapper">
+            <div class="container">
+                <div class="about-us">
+                    <div class="about-column">
+                        <div class="about-title">
+                            <h1>Về CareX</h1>
+                        </div>
+                        <div class="about-content">
+                            <p>Hoạt động từ 2023 trong lĩnh vực sửa chữa điện thoại cùng đội ngũ kĩ thuật lành nghề và
+                                giàu tâm huyết, CareX luôn đặt uy tín và sự hài lòng của khách hàng là ưu tiên hàng đầu
+                                cho tất cả hoạt động của công ty. CareX tự hào là một trong những trung tâm, hệ thống
+                                chuyên cung cấp dịch vụ sửa chữa tốt nhất tại TP.HCM. Các dịch vụ tại trung tâm luôn
+                                được đánh giá cao về chất lượng, phản hồi tốt về quy trình. Bên cạnh đó, các yếu tố khác
+                                như chi phí, chế độ bảo hành, phong cách làm việc của nhân viên cũng luôn đem tới cho
+                                khách hàng sự hài lòng, yên tâm và thoải mái. </p>
+                            <p class="slogan"><em>“Chúng tôi cam kết sẽ không lãng phí niềm tin mà khách hàng đã trao
+                                trong suốt thời gian qua”</em></p>
+                        </div>
                     </div>
-                    <div class="about-content">
-                        <p>Hoạt động từ 2023 trong lĩnh vực sửa chữa điện thoại cùng đội ngũ kĩ thuật lành nghề và
-                            giàu tâm huyết, CareX luôn đặt uy tín và sự hài lòng của khách hàng là ưu tiên hàng đầu
-                            cho tất cả hoạt động của công ty. CareX tự hào là một trong những trung tâm, hệ thống
-                            chuyên cung cấp dịch vụ sửa chữa tốt nhất tại TP.HCM. Các dịch vụ tại trung tâm luôn
-                            được đánh giá cao về chất lượng, phản hồi tốt về quy trình. Bên cạnh đó, các yếu tố khác
-                            như chi phí, chế độ bảo hành, phong cách làm việc của nhân viên cũng luôn đem tới cho
-                            khách hàng sự hài lòng, yên tâm và thoải mái. </p>
-                        <p class="slogan"><em>“Chúng tôi cam kết sẽ không lãng phí niềm tin mà khách hàng đã trao
-                            trong suốt thời gian qua”</em></p>
+                    <div class="about-pic-column">
+                        <img src="images/about-us.jpg" alt="about us">
                     </div>
-                </div>
-                <div class="about-pic-column">
-                    <img src="images/about-us.jpg" alt="about us">
-                </div>
-            </div>
-            <div class="img-tabs">
-
-            </div>
-            <div class="review">
-                <div class="rating">
-
-                </div>
-                <div class="rating">
-
-                </div>
-                <div class="rating">
-
                 </div>
             </div>
         </div>
+
+        <div class="gallary-tabs">
+            <div class="container">
+                <div class="tabs-title">
+                    <h2>ĐỘI NGŨ NHÂN VIÊN VÀ TRANG THIẾT BỊ</h2>
+                </div>
+
+                <div class="tabs pt-50">
+                    <div class="tabs-head">
+                        <button class="tabs-link" onclick="openTab(Event, 'NV')" id="defaultOpen">Đội ngũ nhân viên
+                        </button>
+                        <button class="tabs-link" onclick="openTab(Event, 'TB')">Trang thiết bị</button>
+                    </div>
+
+                    <div id="NV" class="tabs-content">
+                        <img src="/images/tab1.jpg" alt="tab1">
+                        <img src="/images/tab2.jpg" alt="tab2">
+                        <img src="/images/tab3.jpg" alt="tab3">
+                    </div>
+                    <div id="TB" class="tabs-content">
+                        <img src="/images/tab4.jpg" alt="tab4">
+                        <img src="/images/tab5.jpg" alt="tab5">
+                        <img src="/images/tab6.jpg" alt="tab6">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="rating">
+
+            </div>
+            <div class="rating">
+
+            </div>
+            <div class="rating">
+
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -205,7 +235,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js" ></script>
+    <script src="js/main.js"></script>
 </div>
 </body>
 </html>
