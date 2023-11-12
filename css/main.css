@@ -372,6 +372,7 @@ footer .copyright {
 #conct {
     right: 0;
     position: fixed;
+    z-index: 1;
 }
 
 #conct ul {
@@ -1041,7 +1042,7 @@ footer .copyright {
 
 .about-us {
     display: flex;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .about-us .about-column {
@@ -1166,20 +1167,54 @@ footer .copyright {
 
 .rating {
     flex: 1;
+    min-width: 330px;
     max-width: 33.33%;
     display: flex;
-    flex-wrap: wrap;
-    background-color: #adadad;
+    background-color: #eeeeee;
+    margin: 0 10px;
+    border-bottom: solid 4px #e0e0e0;
+}
+
+.rating .avatar {
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+.rating .avatar img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
 }
 
 .rating-content {
     width: auto;
+    padding: 12px;
 }
 
-.rating .avatar img {
-    height: 75px;
-    width: 75px;
+.rating-content h3 {
+    font-size: 1.6rem;
+    margin: 0;
 }
+
+.rating-content .rating-date {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.rating-content .stars-span img {
+    margin: 5px 0;
+}
+
+.rating-content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    width: auto;
+}
+
+
 
 
 
