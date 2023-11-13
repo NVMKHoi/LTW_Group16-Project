@@ -41,7 +41,7 @@
                             <a href="chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="../chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
                         </li>
                         <li class="nav-item">
                             <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
@@ -50,14 +50,14 @@
                             <ul class="sub-nav">
                                 <li class="sub-item"><a href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
                                 <li class="sub-item"><a href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="../chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a></li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
+                            <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="booking">
+                            <a href="../datlich.html" class="booking">
                                 ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
@@ -85,39 +85,41 @@
     <div class="content">
         <div class="container">
             <div class="card-container">
+<!--                apple icon-->
                 <div class="problem-card-logo">
                     <a href="chuyen-de-iphone.html"><img src="../images/ip-images/apple-logo.png" alt="screen" style="width: 200px; margin: 3px"></a>
                 </div>
             </div>
+<!--            /apple icon-->
             <div class="card-container">
                 <div class="problem-card">
                     <a href="ip-manhinh.html"><img src="../images/ip-images/screen.jpg" alt="screen" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Màn hình - Kính</b></h4>
+                        <a href="ip-manhinh.html">Màn hình - Kính</a>
                     </div>
                 </div>
                 <div class="problem-card">
                     <a href="ip-camera.html"><img src="../images/ip-images/cam.jpg" alt="cam" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Camera</b></h4>
+                        <a href="ip-camera.html">Camera</a>
                     </div>
                 </div>
                 <div class="problem-card">
                     <a href="ip-pin.html"><img src="../images/ip-images/pin.jpg" alt="battery" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Pin</b></h4>
+                        <a href="ip-pin.html">Pin</a>
                     </div>
                 </div>
                 <div class="problem-card">
                     <a href="ip-sac.html"><img src="../images/ip-images/sac.jpg" alt="charge" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Cổng sạc</b></h4>
+                        <a href="ip-sac.html">Cổng sạc</a>
                     </div>
                 </div>
                 <div class="problem-card">
                     <a href="ip-loa.html"><img src="../images/ip-images/loa.jpg" alt="speaker" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Loa</b></h4>
+                        <a href="ip-loa.html">Loa</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +128,7 @@
                 <div class="problem-card">
                     <a href="ip-mainboard.html"><img src="../images/ip-images/main.jpg" alt="speaker" style="width: 200px"></a>
                     <div class="context">
-                        <h4><b>Mainborad</b></h4>
+                       <a href="ip-mainboard.html">Mainborad</a>
                     </div>
                 </div>
                 <div class="problem-card soon">
@@ -134,8 +136,8 @@
                     <div class="overlay">
                         Sắp có
                     </div>
-                    <div class="context">
-                        <h4><b>iCloud</b></h4>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>iCloud</b>
                     </div>
                 </div>
                 <div class="problem-card soon">
@@ -143,8 +145,8 @@
                     <div class="overlay">
                         Sắp có
                     </div>
-                    <div class="context">
-                        <h4><b>eSim</b></h4>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>eSim</b>
                     </div>
                 </div>
                 <div class="problem-card soon">
@@ -152,8 +154,8 @@
                     <div class="overlay">
                         Sắp có
                     </div>
-                    <div class="context">
-                        <h4><b>App Store</b></h4>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>App Store</b>
                     </div>
                 </div>
                 <div class="problem-card soon">
@@ -161,20 +163,23 @@
                     <div class="overlay">
                         Sắp có
                     </div>
-                    <div class="context">
-                        <h4><b>Cảm biến vân tay</b></h4>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>Cảm biến vân tay</b>
                     </div>
                 </div>
             </div>
-            <div class="extra-btn">
+            <div class="extra-btn" id="more-btn">
                 <button class="e-btn" onclick="showMore()" >
                         Xem thêm
                 </button>
             </div>
+            <div class="extra-btn" id="less-btn" style="display: none">
+                <button class="e-btn" onclick="showLess()">
+                    Ẩn bớt
+                </button>
+            </div>
             </div>
         </div>
-    </div>
-
     <footer class="footer">
         <div class="footer-ft">
             <div class="container">
@@ -182,7 +187,7 @@
                     <div class="footer-row">
                         <div class="nav-column-logo">
                             <div class="logo">
-                                <a href="#">
+                                <a href="../index.html">
                                     <img src="../images/logo.png" alt="logo">
                                 </a>
                             </div>
@@ -202,7 +207,7 @@
                                         <a href="../faq.html">Câu hỏi thường gặp</a>
                                     </li>
                                     <li>
-                                        <a href="">Tra máy gửi sửa</a>
+                                        <a href="../track.html">Tra máy gửi sửa</a>
                                     </li>
                                 </ul>
                             </div>
@@ -243,7 +248,6 @@
             <li><i class='fa fa-google' style='font-size:36px'></i></li>
         </ul>
     </div>
-
 </div>
 </body>
 </html>

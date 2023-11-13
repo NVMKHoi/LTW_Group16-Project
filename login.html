@@ -16,33 +16,33 @@
         <div class="header-foot">
             <div class="container">
                 <div class="navigation">
-                    <ul class="nav-bar">
-                        <li class="nav-item">
-                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
-                                <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="booking">
-                                ĐẶT LỊCH HẸN
-                                <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
+<!--                    <ul class="nav-bar">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC-->
+<!--                                <i class="fa fa-chevron-down"></i>-->
+<!--                            </a>-->
+<!--                            <ul class="sub-nav">-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="nav-item-link">LIÊN HỆ</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="booking">-->
+<!--                                ĐẶT LỊCH HẸN-->
+<!--                                <i class="fa fa-arrow-right"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
                 </div>
             </div>
         </div>
@@ -62,20 +62,39 @@
     <div class="content">
         <div class="container">
             <div class="login-form">
-                <h1>DANG NHAP</h1>
+                <div class="form-title">
+                    <h1>ĐĂNG NHẬP</h1>
+                </div>
                 <div class="login-input">
                     <form action=" ">
-                        <label><b>Ten dang nhap</b></label>
-                        <input type="text" name="Username" placeholder="nhap ten dang nhap" required>
-                        <label><b>Mat khau</b></label>
-                        <input type="password" name="Password" placeholder="nhap mat khau" required>
-                        <label>
-                            <input type="checkbox" name="remember me">Ghi nho dang nhap
+                        <label><span>Tên đăng nhập</span>
+                            <input type="text" name="Username" placeholder="Nhập tên đăng nhập" required>
                         </label>
-                        <input type="submit" value="DANG NHAP">
+                        <label><span>Mật khẩu</span>
+                            <input type="password" name="Password" placeholder="Nhập mật khẩu" required>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember me">Ghi nhớ đăng nhập
+                        </label>
+                        <input type="submit" value="ĐĂNG NHẬP">
                     </form>
-                    <a href="register.html" class="register">Tao tai khoan</a>
-                    <a href="reset-pwd.html" class="fogot-pwd">Quen mat khau</a>
+                    <div class="reg-respwd">
+                        <a href="register.html" >Tạo tài khoản</a> |
+                        <a href="reset-pwd.html" >Quên mật khẩu</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo" style="width: 12%">
+                        </a>
+                    </div>
+                    <div class="support">
+                        <h3 class="footer-heading" style="font-size: 16px">Tổng đài hỗ trợ miễn phí</h3>
+                        <p>Gọi tư vấn: <a href="tel:1800.2406" style="color: #f49300">1800.2406</a>
+                            (9h00 - 21h00)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

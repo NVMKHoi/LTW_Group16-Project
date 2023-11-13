@@ -16,33 +16,33 @@
         <div class="header-foot">
             <div class="container">
                 <div class="navigation">
-                    <ul class="nav-bar">
-                        <li class="nav-item">
-                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
-                                <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="booking">
-                                ĐẶT LỊCH HẸN
-                                <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
+<!--                    <ul class="nav-bar">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC-->
+<!--                                <i class="fa fa-chevron-down"></i>-->
+<!--                            </a>-->
+<!--                            <ul class="sub-nav">-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>-->
+<!--                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="nav-item-link">LIÊN HỆ</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="booking">-->
+<!--                                ĐẶT LỊCH HẸN-->
+<!--                                <i class="fa fa-arrow-right"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
                 </div>
             </div>
         </div>
@@ -62,29 +62,45 @@
     <div class="content">
         <div class="container">
             <div class="register-form">
-                <h1>DANG KY</h1>
+                <div class="form-title">
+                    <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+                </div>
                 <div class="register-input">
                     <form action=" ">
-                        <label><b>email</b>
-                            <input type="text" name="email" placeholder="nhap ten dang nhap" required>
+                        <label><span>Email</span>
+                            <input type="text" name="email" placeholder="Nhập email" required>
                         </label>
-                        <label><b>Ten dang nhap</b>
-                            <input type="text" name="Username" placeholder="nhap ten dang nhap" required>
+                        <label><span>Tên đăng nhập</span>
+                            <input type="text" name="Username" placeholder="Nhập tên đăng nhập" required>
                         </label>
-                        <label><b>Mat khau</b>
-                            <input type="text" name="Password" placeholder="nhap mat khau" required>
+                        <label><span>Mật khẩu</span>
+                            <input type="password" name="Password" placeholder="Nhập mật khẩu" required>
                         </label>
-                        <label><b>Nhap lai mat khau</b>
-                            <input type="text" name="Password" placeholder="nhap mat khau" required>
+                        <label><span>Xác nhận mật khẩu</span>
+                            <input type="password" name="Password" placeholder="Lặp lại mật khẩu" required>
                         </label>
                         <label>
-                            <input type="checkbox" name="remember me">Toi dong y voi <a href=" " class="register">dieu khoang</a>
+                            <input type="checkbox" name="remember me">Tôi đồng ý với <a href=" " class="register" style="text-decoration: underline" onclick="alert('có cái con cặc, địt mẹ mày!!')">điều khoản</a>
                         </label>
-                        <input type="submit" value="DANG KY">
+                        <input type="submit" value="ĐĂNG KÝ">
                     </form>
-                    <a class="already">Da co tai khoang?</a>
-                    <a href="login.html" class="register">Dang nhap</a>
-
+                    <div class="reg-respwd">
+                        <a class="already">Đã có tài khoản?</a>
+                        <a href="login.html" class="register">>>Đăng Nhập<<</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo" style="width: 12%">
+                        </a>
+                    </div>
+                    <div class="support">
+                        <h3 class="footer-heading" style="font-size: 16px">Tổng đài hỗ trợ miễn phí</h3>
+                        <p>Gọi tư vấn: <a href="tel:1800.2406" style="color: #f49300">1800.2406</a>
+                            (9h00 - 21h00)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
