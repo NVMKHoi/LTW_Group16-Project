@@ -17,7 +17,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index2.html">
                         <img src="images/logo.png" alt="logo">
                     </a>
                 </div>
@@ -50,10 +50,10 @@
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a>
+                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
                                 </li>
                                 <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a>
+                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
                                 </li>
                             </ul>
                         </li>
@@ -84,31 +84,53 @@
     </div>
 
     <div class="content">
-
         <div class="slide-show">
             <div class="container">
-                <div class="slide-wrapper">
-                    <div class="slide fade">
-                        <img src="images/index/slide1.jpg" alt="slide 1">
-                    </div>
-                    <div class="slide fade">
-                        <img src="images/index/slide2.jpg" alt="slide 2">
-                    </div>
-                    <div class="slide fade">
-                        <img src="images/index/slide3.jpg" alt="slide 3">
-                    </div>
+                <div id="by">
+                    <script>
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        var counter = 1;
+                        setInterval(function () {
+                            document.getElementById('radio' + counter).checked = true;
+                            counter++;
+                            if (counter > 3) {
+                                counter = 1;
+                            }
+                        }, 3000);
 
-                    <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </script>
+                    <div class="slider">
+                        <div class="slides">
+
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+
+                            <div class="slideImg first">
+                                <img src="images/index/slide1.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="images/index/slide2.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="images/index/slide3.jpg" alt="">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-manual">
+                            <label FOR="radio1" class="manual-btn"></label>
+                            <label FOR="radio2" class="manual-btn"></label>
+                            <label FOR="radio3" class="manual-btn"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="about-wrapper">
@@ -151,7 +173,7 @@
                     </div>
 
                     <div id="NV" class="tabs-content">
-                        <img src="/images/tab1.jpg" alt="tab1">
+                        <img src="/images/index/tab1.jpg" alt="tab1">
                         <img src="images/index/tab2.jpg" alt="tab2">
                         <img src="images/index/tab3.jpg" alt="tab3">
                     </div>
