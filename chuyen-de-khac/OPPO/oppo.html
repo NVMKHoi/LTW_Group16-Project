@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="/js/main.js"></script>
 </head>
 
 <body>
@@ -107,24 +107,24 @@
             <!--tag of line-->
             <div class="tag">
                 <div class="tags">
-                    <a href="oppo-screen.html"><img style="margin: 25px 55px;" src="../../images/p-another/phone-op.jpg"
-                                                    alt="logo-" width="70px" height="130px"></a>
+                    <a href="oppo-screen.html"><img style="margin: 30px 75px;" src="../../images/p-another/phone-op.jpg"
+                                                      alt="logo-lg" width="70px" height="120px"></a>
                     <div class="text-logo">
-                        <span>Màn hình</span>
+                        <span>Màn hình OPPO</span>
                     </div>
                     <div class="text-xm">
                         <a href="oppo-screen.html">
-                            <button class="text-xm-btn">
+                               <button class="text-xm-btn">
                                 <span>Xem chi tiết</span>
                             </button>
                         </a>
                     </div>
                 </div>
                 <div class="tags">
-                    <a href="oppo-pin.html"><img style="margin: 25px 55px;" src="../../images/p-another/pin.png"
-                                                 alt="logo-" width="70px" height="130px"></a>
+                    <a href="oppo-pin.html"><img style="margin: 25px 75px;" src="../../images/p-another/pin.png"
+                                                   alt="logo-lg" width="70px" height="130px"></a>
                     <div class="text-logo">
-                        <span>Pin</span>
+                        <span>Pin OPPO</span>
                     </div>
                     <div class="text-xm">
                         <a href="oppo-pin.html">
@@ -135,10 +135,10 @@
                     </div>
                 </div>
                 <div class="tags">
-                    <a href="oppo-ic.html"><img style="margin: 25px 30px;" src="../../images/p-another/ic.jpg"
-                                                alt="logo-" width="120px" height="130px"></a>
+                    <a href="oppo-ic.html"><img style="margin: 25px 50px;" src="../../images/p-another/ic.jpg"
+                                                  alt="logo-" width="120px" height="130px"></a>
                     <div class="text-logo">
-                        <span>Lỗi nguồn</span>
+                        <span>Lỗi nguồn OPPO</span>
                     </div>
                     <div class="text-xm">
                         <a href="oppo-ic.html">
@@ -149,10 +149,10 @@
                     </div>
                 </div>
                 <div class="tags">
-                    <a href="oppo-cg.html"><img style="margin: 25px 45px;" src="../../images/p-another/cg.png"
-                                                alt="logo-" width="90px" height="130px"></a>
+                    <a href="oppo-cg.html"><img style="margin: 25px 65px;" src="../../images/p-another/cg.png"
+                                                  alt="logo-" width="90px" height="130px"></a>
                     <div class="text-logo">
-                        <span>Cảm ứng</span>
+                        <span>Cảm ứng OPPO</span>
                     </div>
                     <div class="text-xm">
                         <a href="oppo-cg.html">
@@ -163,10 +163,10 @@
                     </div>
                 </div>
                 <div class="tags">
-                    <a href="oppo-cm.html"><img style="margin: 25px 30px;" src="../../images/p-another/cam.png"
+                    <a href="oppo-cm.html"><img style="margin: 25px 50px;" src="../../images/p-another/cam.png"
                                                   alt="logo-lg" width="120px" height="130px"></a>
                     <div class="text-logo">
-                        <span>Camera</span>
+                        <span>Camera OPPO</span>
                     </div>
                     <div class="text-xm">
                         <a href="oppo-cm.html">
@@ -177,12 +177,47 @@
                     </div>
                 </div>
             </div>
-            <div style="padding: 0 0 20px;" class="container-contact100-form-btn">
-                <a href="oppo-xm.html">
-                    <button style="padding: 0 80px; border: 1px solid grey;" class="contact100-form-btn">
-                        <span>Xem thêm<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i></span>
+            <div style="display: none" id="xm" class="tag">
+                <div class="tags">
+                    <a href="oppo-wifi.html">
+                        <img style="margin: 35px 10px; " src="../../images/p-another/wf.png"
+                             alt="logo-" width="200 px" height="110px">
+                    </a>
+                    <div class="text-logo">
+                        <span>Kết nối OPPO</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="oppo-wifi.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="tags">
+                    <a href="oppo-vol.html"><img style="margin:40px 25px;" src="../../images/p-another/vol.png"
+                                                 alt="logo-lg" width="200px" height="100px"></a>
+                    <div class="text-logo">
+                        <span>Loa OPPO</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="oppo-vol.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px 400px 20px;" id="more" class="container-contact100-form-btn">
+                    <button style="padding: 0 80px; border: 1px solid grey;" class="contact100-form-btn" onclick="more()">
+                        Xem thêm<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                     </button>
-                </a>
+            </div>
+            <div style="padding: 10px 400px 20px; display: none;" id="hide" class="container-contact100-form-btn">
+                    <button style="padding: 0 80px; border: 1px solid grey;" class="contact100-form-btn" onclick="hide()">
+                        Ẩn bớt<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </button>
             </div>
         </div>
     </div>

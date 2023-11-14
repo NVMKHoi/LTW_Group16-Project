@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
 <body>
 <div class="main">
     <header class="header">
@@ -20,7 +24,6 @@
                     <a href="index.html">
                         <img src="images/logo.png" alt="logo">
                     </a>
-
                 </div>
                 <div class="search">
                     <input type="text" class="search-input" placeholder="Tìm kiếm...">
@@ -29,7 +32,7 @@
                     </button>
                 </div>
                 <div class="login">
-                    <a href="#" class="login-btn">ĐĂNG NHẬP</a>
+                    <a href="login.html" class="login-btn">ĐĂNG NHẬP</a>
                 </div>
             </div>
         </div>
@@ -38,27 +41,30 @@
                 <div class="navigation">
                     <ul class="nav-bar">
                         <li class="nav-item">
-                            <a href="../../chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
+                            <a href="chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA
+                                SAMSUNG</a>
                         </li>
                         <li class="nav-item">
                             <a href="chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
+                                </li>
                                 <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa LG</a></li>
+                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="nav-item-link">
-                                Đặt lịch hẹn
+                            <a href="datlich.html" class="booking">
+                                ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
                         </li>
@@ -68,79 +74,383 @@
         </div>
     </header>
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="content">
-
-
+    <div id="conct">
+        <ul>
+            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="home">
         <div class="container">
-            <div id="conct">
-                <ul>
-                    <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="home">
-                <ul>
-                    <li>
-                        <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
-                        <a href="chuyen-de-khac/chuyen-de-khac.html"> Đặt lịch hẹn </a>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
+                    <a href="datlich.html"> ĐẶT LỊCH HẸN </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
             <!--            table-->
             <div id="appointment">
+                <div class="dlhen">
+                    <h1>ĐẶT LỊCH HẸN NGAY</h1>
+                    <div class="form">
+                        <div class="dl-input" data-validate="Please Type Your Name">
+                            <span class="label-input">Họ tên <span style="color: red;">*</span></span>
+                            <input class="input" type="text" name="name" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="col2-form">
+                            <div style="margin-right: 22px" class="dl-input"
+                                 data-validate="Enter Your Address (abc,xyz)">
+                                <span class="label-input">Địa chỉ <span style="color: red;">*</span></span>
+                                <input class="input" type="text" name="address" placeholder="Nhập địa chỉ của bạn">
+                            </div>
+                            <div class="dl-input" data-validate="Enter Your Phone (0x)">
+                                <span class="label-input">Phone <span style="color: red;">*</span></span>
+                                <input class="input" type="text" name="phone" placeholder="Nhập số điện thoại của bạn">
+                            </div>
+                        </div>
+                        <div style="height: auto;" class="dl-input" data-validate="Please Type Your Name">
+                            <span class="label-input">Chọn nhãn hàng mà bạn muốn <span style="color: red;">*</span></span>
+                            <div class="body">
+                                <div class="coner">
+                                    <div class="tb_box">
+                                        <button class="tb_btn">Iphone</button>
+                                        <button class="tb_btn">Samsung</button>
+                                        <button class="tb_btn">Xiaomi</button>
+                                        <button class="tb_btn">Oppo</button>
+                                        <button class="tb_btn">Realme</button>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="ctent_box">
 
-                <div class="container-contact100">
-                    <div><img style="float: left;width:390px;height:333px; margin-top:30px; border-radius:20px"
-                              src="images/contact/datlich.png"></div>
-                    <div class="wrap-contact100">
-                        <form class="contact100-form validate-form">
-<span class="contact100-form-title">
-ĐẶT LỊCH HẸN NGAY
-</span>
-                            <div class="wrap-input100" data-validate="Please Type Your Name">
-                                <span class="label-input100">Họ tên *</span>
-                                <input class="input100" type="text" name="name" placeholder="Nhập tên của bạn">
+<!--                                        IPHONE-->
+                                        <div class="ctent">
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn những lỗi mà bạn mắc phải hoặc muốn sửa chữa <span style="color: red;">*</span></span>
+                                                <div style="margin-top: 7px" class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Màn hình - Kính</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Camera</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Pin</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Cổng sạc</span>
+                                                    </div>
+                                                </div>
+                                                <div class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Loa</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>MainBoard</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Tên điện thoại <span style="color: red;">*</span></span>
+                                                <input class="input" type="text" name="text"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Chọn ngày hẹn dự kiến <span style="color: red;">*</span></span>
+                                                <input class="input" type="datetime-local" name="birthdaytime"
+                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn phương thức dịch vụ <span style="color: red;">*</span></span>
+                                                <div class="mode">
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại nhà</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại trung tâm dịch vụ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<!--                                        SAMSUNG-->
+                                        <div class="ctent">
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn những lỗi mà bạn mắc phải hoặc muốn sửa chữa <span style="color: red;">*</span></span>
+                                                <div style="margin-top: 7px" class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Màn hình</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Pin</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Lỗi nguồn</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Cảm ứng</span>
+                                                    </div>
+                                                </div>
+                                                <div class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Camera</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Kết nối</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Loa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Tên điện thoại <span style="color: red;">*</span></span>
+                                                <input class="input" type="text" name="text"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Chọn ngày hẹn dự kiến <span style="color: red;">*</span></span>
+                                                <input class="input" type="datetime-local" name="birthdaytime"
+                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn phương thức dịch vụ <span style="color: red;">*</span></span>
+                                                <div class="mode">
+                                                    <div>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="">Sửa chữa tại nhà</span>
+                                                    </div>
+                                                    <div>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="">Sửa chữa tại trung tâm dịch vụ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<!--                                        XIAOMI-->
+                                        <div class="ctent">
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn những lỗi mà bạn mắc phải hoặc muốn sửa chữa <span style="color: red;">*</span></span>
+                                                <div style="margin-top: 7px" class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Màn hình</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Pin</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Lỗi nguồn</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Cảm ứng</span>
+                                                    </div>
+                                                </div>
+                                                <div class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Camera</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Kết nối</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Loa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Tên điện thoại <span style="color: red;">*</span></span>
+                                                <input class="input" type="text" name="text"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Chọn ngày hẹn dự kiến <span style="color: red;">*</span></span>
+                                                <input class="input" type="datetime-local" name="birthdaytime"
+                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn phương thức dịch vụ <span style="color: red;">*</span></span>
+                                                <div class="mode">
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại nhà</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại trung tâm dịch vụ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<!--                                        OPPO-->
+                                        <div class="ctent">
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn những lỗi mà bạn mắc phải hoặc muốn sửa chữa <span style="color: red;">*</span></span>
+                                                <div style="margin-top: 7px" class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Màn hình</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Pin</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Lỗi nguồn</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Cảm ứng</span>
+                                                    </div>
+                                                </div>
+                                                <div class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Camera</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Kết nối</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Loa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Tên điện thoại <span style="color: red;">*</span></span>
+                                                <input class="input" type="text" name="text"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Chọn ngày hẹn dự kiến <span style="color: red;">*</span></span>
+                                                <input class="input" type="datetime-local" name="birthdaytime"
+                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn phương thức dịch vụ <span style="color: red;">*</span></span>
+                                                <div class="mode">
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại nhà</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại trung tâm dịch vụ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<!--                                        REALME-->
+                                        <div class="ctent">
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn những lỗi mà bạn mắc phải hoặc muốn sửa chữa <span style="color: red;">*</span></span>
+                                                <div style="margin-top: 7px" class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Màn hình</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Pin</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Lỗi nguồn</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Cảm ứng</span>
+                                                    </div>
+                                                </div>
+                                                <div class="issues">
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Camera</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Kết nối</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox">
+                                                        <span>Loa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Tên điện thoại <span style="color: red;">*</span></span>
+                                                <input class="input" type="text" name="text"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input">Chọn ngày hẹn dự kiến <span style="color: red;">*</span></span>
+                                                <input class="input" type="datetime-local" name="birthdaytime"
+                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                            </div>
+                                            <div class="dl-input" data-validate="Please Type Your Name">
+                                                <span class="label-input"> Chọn phương thức dịch vụ <span style="color: red;">*</span></span>
+                                                <div class="mode">
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại nhà</span>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" checked="checked" name="radio">
+                                                        <span class="">Sửa chữa tại trung tâm dịch vụ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="wrap-input100 validate-input bg1 rs1-wrap-input100"
-                                 data-validate="Enter Your Email (e@a.x)">
-                                <span class="label-input100">Email *</span>
-                                <input class="input100" type="text" name="email" placeholder="Nhập email của bạn">
-                            </div>
-                            <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                <span class="label-input100">Phone</span>
-                                <input class="input100" type="text" name="phone"
-                                       placeholder="Nhập số điện thoại của bạn">
-                            </div>
-                            <div class="wrap-input100">
-                                <span class="label-input100" style="position: absolute;margin-top:9px">Chọn hãng muốn sửa chữa *</span>
-                                <select style="padding-left:20px;margin-left:140px;font-size:12px;width:430px; height:30px;border-radius:10px;border: 0;box-shadow: 0 0 1px grey ;"
-                                        class="js-select2" name="service">
-                                    <option>Options</option>
-                                    <option>Iphone</option>
-                                    <option>Samsung</option>
-                                    <option> Xiaomi</option>
-                                    <option> OPPO</option>
-                                    <option> LG</option>
-                                </select>
-                            </div>
-                            <div class="wrap-input100"
-                                 data-validate="Please Type Your Message">
-                                <span class="label-input100">Lời nhắn</span>
-                                <textarea style="height:66px" class="input100" name="message" placeholder="Hãy viết gì đó..."></textarea>
-                            </div>
-                            <div class="container-contact100-form-btn">
-                                <button class="contact100-form-btn">
-                                    <span>Đặt lịch</span>
-                                </button>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="dl-input" data-validate="Please Type Your Message">
+                            <span class="label-input">Lời nhắn</span>
+                            <textarea style="height:66px" class="input" name="message"
+                                      placeholder="Hãy viết gì đó..."></textarea>
+                        </div>
+                        <div class="container-contact100-form-btn">
+                            <button onclick="myFunction()" class="contact100-form-btn">
+                                <span>Đặt lịch</span>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
-                <!--------------------------------------------------------->
-
             </div>
         </div>
     </div>
@@ -151,7 +461,7 @@
                 <div class="footer-row">
                     <div class="nav-column-logo">
                         <div class="logo">
-                            <a href="#">
+                            <a href="index.html">
                                 <img src="images/logo.png" alt="logo">
                             </a>
                         </div>
@@ -205,7 +515,31 @@
         </div>
     </footer>
 </div>
+<script>
+    function myFunction() {
+        alert("Bạn đã đặt lịch thành công!");
+    }
 
+    const datlich = document.querySelectorAll('.tb_btn');
+    const all_content = document.querySelectorAll('.ctent');
 
+    datlich.forEach((tab, index) => {
+        tab.addEventListener('click', (e) => {
+            datlich.forEach(tab => {
+                tab.classList.remove('active')
+            });
+            tab.classList.add('active');
+
+            var line = document.querySelector('.line');
+            line.style.width = e.target.offsetWidth + "px";
+            line.style.left = e.target.offsetLeft + "px";
+
+            all_content.forEach(ctent => {
+                ctent.classList.remove('active')
+            });
+            all_content[index].classList.add('active');
+        })
+    })
+</script>
 </body>
 </html>
