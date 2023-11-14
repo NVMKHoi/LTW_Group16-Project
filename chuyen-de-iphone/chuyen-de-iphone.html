@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="/js/main.js"></script>
 </head>
-
 <body>
 <div class="main">
     <header class="header">
@@ -30,7 +29,7 @@
                     </button>
                 </div>
                 <div class="login">
-                    <a href="#" class="login-btn">ĐĂNG NHẬP</a>
+                    <a href="../login.html" class="login-btn">ĐĂNG NHẬP</a>
                 </div>
             </div>
         </div>
@@ -42,23 +41,23 @@
                             <a href="chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="../chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
                         </li>
                         <li class="nav-item">
-                            <a href="chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                            <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="">Sửa chữa Xiaomi</a></li>
-                                <li class="sub-item"><a href="">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="">Sửa chữa LG</a></li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a></li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-item-link">LIÊN HỆ</a>
+                            <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="booking">
+                            <a href="../datlich.html" class="booking">
                                 ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
@@ -68,45 +67,122 @@
             </div>
         </div>
     </header>
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="../index.html" class="home-icon">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="fa fa-chevron-right"></i>
+                </li>
+                <li class="breadcrumb-item">Sửa chữa IPhone</li>
+            </ul>
+        </div>
+    </div>
     <div class="content">
         <div class="container">
-            <div class="text">
-                <h1><img src="../images/ip-images/iPhone-15.png" alt="test" width="200">Bảng giá sửa chữa IPhone </h1>
+            <div class="card-container">
+<!--                apple icon-->
+                <div class="problem-card-logo">
+                    <a href="chuyen-de-iphone.html"><img src="../images/ip-images/apple-logo.png" alt="screen" style="width: 200px; margin: 3px"></a>
+                </div>
+                <div class="problem-card-logo-context">
+                   <h1>Bảng giá sửa chữa/Thay thế linh kiện IPhone</h1>
+                </div>
             </div>
-            <div class="problem">
-                <table>
-                    <tr>
-                        <td><a href="ip-manhinh.html">
-                            <img src="../images/ip-images/screen.jpg" alt="Man hinh" width="180" height="180">
-                        </a></td>
-                        <td><a href="ip-camera.html">
-                            <img src="../images/ip-images/cam.jpg" width="180" height="180">
-                        </a></td>
-                        <td><a href="ip-pin.html"><img src="../images/ip-images/pin.jpg" width="180" height="180">
-                        </a></td>
-                        <td><a href="ip-loa.html"><img src="../images/ip-images/loa.jpg" width="180" height="180">
-                        </a></td>
-                        <td><a href="ip-sac.html"><img src="../images/ip-images/sac.jpg" width="180" height="180">
-                        </a></td>
-                        <td><a href="ip-mainboard.html"><img src="../images/ip-images/main.jpg" width="180" height="180">
-                        </a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="ip-manhinh.html">Màn hình - Kính</a></td>
-                        <td><a href="#">Camera</a></td>
-                        <td><a href="#">Pin</a></td>
-                        <td><a href="#">Loa Ngoài</a></td>
-                        <td><a href="#">Sạc</a></td>
-                        <td><a href="#">MainBoard</a></td>
-                    </tr>
+<!--            /apple icon-->
+            <div class="card-container">
+                <div class="problem-card">
+                    <a href="ip-manhinh.html"><img src="../images/ip-images/screen.jpg" alt="screen" style="width: 200px"></a>
+                    <div class="context">
+                        <a href="ip-manhinh.html">Màn hình - Kính</a>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <a href="ip-camera.html"><img src="../images/ip-images/cam.jpg" alt="cam" style="width: 200px"></a>
+                    <div class="context">
+                        <a href="ip-camera.html">Camera</a>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <a href="ip-pin.html"><img src="../images/ip-images/pin.jpg" alt="battery" style="width: 200px"></a>
+                    <div class="context">
+                        <a href="ip-pin.html">Pin</a>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <a href="ip-sac.html"><img src="../images/ip-images/sac.jpg" alt="charge" style="width: 200px"></a>
+                    <div class="context">
+                        <a href="ip-sac.html">Cổng sạc</a>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <a href="ip-loa.html"><img src="../images/ip-images/loa.jpg" alt="speaker" style="width: 200px"></a>
+                    <div class="context">
+                        <a href="ip-loa.html">Loa</a>
+                    </div>
+                </div>
+            </div>
 
-                </table>
+            <div class="card-container" id="row2" style="display: none">
+                <div class="problem-card">
+                    <a href="ip-mainboard.html"><img src="../images/ip-images/main.jpg" alt="speaker" style="width: 200px"></a>
+                    <div class="context">
+                       <a href="ip-mainboard.html">Mainborad</a>
+                    </div>
+                </div>
+                <div class="problem-card soon">
+                    <a><img src="../images/ip-images/icloud.png" alt="cloud" style="width: 200px; opacity: 0.5"></a>
+                    <div class="overlay">
+                        Sắp có
+                    </div>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>iCloud</b>
+                    </div>
+                </div>
+                <div class="problem-card soon">
+                    <a><img src="../images/ip-images/esim.png" alt="e-sim" style="width: 200px; opacity: 0.5"></a>
+                    <div class="overlay">
+                        Sắp có
+                    </div>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>eSim</b>
+                    </div>
+                </div>
+                <div class="problem-card soon">
+                    <a><img src="../images/ip-images/appstore.png" alt="store" style="width: 200px; opacity: 0.5"></a>
+                    <div class="overlay">
+                        Sắp có
+                    </div>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>App Store</b>
+                    </div>
+                </div>
+                <div class="problem-card soon">
+                    <a><img src="../images/ip-images/touchid.png" alt="tid" style="width: 200px; opacity: 0.5"></a>
+                    <div class="overlay">
+                        Sắp có
+                    </div>
+                    <div class="context" style="background: var(--text-color)">
+                        <b>Cảm biến vân tay</b>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-btn" id="more-btn">
+                <button class="e-btn" onclick="showMore()" >
+                        Xem thêm
+                </button>
+            </div>
+            <div class="extra-btn" id="less-btn" style="display: none">
+                <button class="e-btn" onclick="showLess()">
+                    Ẩn bớt
+                </button>
+            </div>
             </div>
         </div>
-
-    </div>
-
-
     <footer class="footer">
         <div class="footer-ft">
             <div class="container">
@@ -114,7 +190,7 @@
                     <div class="footer-row">
                         <div class="nav-column-logo">
                             <div class="logo">
-                                <a href="#">
+                                <a href="../index.html">
                                     <img src="../images/logo.png" alt="logo">
                                 </a>
                             </div>
@@ -131,10 +207,10 @@
                                 <h3 class="footer-heading">Về CareX</h3>
                                 <ul>
                                     <li>
-                                        <a href="">Câu hỏi thường gặp</a>
+                                        <a href="../faq.html">Câu hỏi thường gặp</a>
                                     </li>
                                     <li>
-                                        <a href="">Tra máy gửi sửa</a>
+                                        <a href="../track.html">Tra máy gửi sửa</a>
                                     </li>
                                 </ul>
                             </div>
@@ -146,7 +222,6 @@
                                     <li>
                                         <a href="">Hướng dẫn đặt lịch, thanh toán</a>
                                     </li>
-
                                     <li>
                                         <a href="">Chính sách đổi trả, bảo hành</a>
                                     </li>
@@ -174,10 +249,8 @@
             <li><i class='fa fa-whatsapp' style='font-size:36px'></i></li>
             <li><i class='fa fa-instagram' style='font-size:36px'></i></li>
             <li><i class='fa fa-google' style='font-size:36px'></i></li>
-
         </ul>
     </div>
-
 </div>
 </body>
 </html>
