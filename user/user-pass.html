@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="main">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                    <button type="submit" class="search-summit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="user-login">
+                    <a href="user-info.html" class="user-login-btn">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-foot">
+            <div class="container">
+                <div class="navigation">
+                    <ul class="nav-bar">
+                        <li class="nav-item">
+                            <a href="../chuyen-de-iphone/chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA
+                                IPHONE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA
+                                SAMSUNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item"><a href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a>
+                                </li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
+                                <li class="sub-item"><a href="../chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../datlich.html" class="booking">
+                                ĐẶT LỊCH HẸN
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--create conct-->
+    <div id="conct">
+        <ul>
+            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="user-content">
+                <div class="left-column">
+                    <div class="side-menu">
+                        <div class="block-menu-item">
+                            <div class="menu-item">
+                                <a href="user-info.html"><i class="fa fa-user-o" aria-hidden="true"></i>
+                                    Tài khoản của tôi
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-menu-item">
+                            <div class="menu-item">
+                                <a href="user-order.html"><i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Đơn đặt lịch
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-menu-item active">
+                            <div class="menu-item">
+                                <a href="user-pass.html"><i class="fa fa-unlock" aria-hidden="true"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-menu-item">
+                            <div class="menu-item">
+                                <a href="user-support.html"><i class="fa fa-volume-control-phone"
+                                                               aria-hidden="true"></i>
+                                    Hỗ trợ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-menu-item">
+                            <div class="menu-item">
+                                <a href="../index.html" class="exit"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    Đăng xuất
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div id="TK" class="tabs-content">
+                        <div class="user-info-wrapper">
+                            <div class="user-info-container">
+                                <div class="password-change-block">
+                                    <div class="password-change-title">
+                                        <h1>Tạo mật khẩu mới</h1>
+                                    </div>
+                                    <div class="password-change-form">
+                                        <p class="form-title">Nhập mật khẩu hiện tại</p>
+                                        <div class="field">
+                                            <input type="text" id="password" name="password" class="group-item"
+                                                   placeholder="Nhập mật khẩu hiện tại của bạn" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="password-change-form">
+                                        <p class="form-title">Nhập mật khẩu hiện tại</p>
+                                        <div class="field">
+                                            <input type="text" id="newPassword" name="newPassword" class="group-item"
+                                                   placeholder="Nhập mật khẩu mới của bạn" required="required">
+                                            <p class="password-notice">
+                                                Mật khẩu phải nhiều hơn 8 ký tự, ít nhất 1 chữ thường 1 chữ in hoa, 1
+                                                chữ số, 1 ký tự đặc biệt
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="confirmNewPassword" name="confirmNewPassword"
+                                                   class="group-item" placeholder="Xác nhận lại mật khẩu"
+                                                   required="required">
+                                        </div>
+                                    </div>
+                                    <div class="user-info-submit">Xác nhận</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</div>
+</body>
+</html>
