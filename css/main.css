@@ -1040,7 +1040,13 @@ div .extra-btn {
 .text_box {
     color: var(--text-color);
     margin: 10px;
+    padding: 10px;
     box-shadow: 0 7px 7px 5px #c7c7c7;
+}
+
+.text_box li {
+    list-style-type: disc;
+    margin-top: 15px;
 }
 
 .text_box p {
