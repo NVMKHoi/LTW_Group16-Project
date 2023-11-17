@@ -29,7 +29,7 @@
                     </button>
                 </div>
                 <div class="login">
-                    <a href="login.html" class="login-btn">ĐĂNG NHẬP</a>
+                    <a href="../login.html" class="login-btn">ĐĂNG NHẬP</a>
                 </div>
             </div>
         </div>
@@ -59,9 +59,15 @@
                             <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../datlich.html" class="booking">ĐẶT LỊCH HẸN
+                            <a href="../login.html" onclick="myFunction()" class="booking">
+                                ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
+                            <script>
+                                function myFunction() {
+                                    alert("Bạn chưa đăng nhập. Vui lòng đăng nhập để tiến hành đặt lịch.");
+                                }
+                            </script>
                         </li>
                     </ul>
                 </div>
@@ -72,11 +78,12 @@
     <!--create conct-->
     <div id="conct">
         <ul>
-            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a>
+            </li>
         </ul>
     </div>
     <div class="home">
@@ -111,38 +118,37 @@
                     </div>
                 </div>
 
-            <div style="margin-right: 30px;" class="tags">
-                <a href="OPPO/oppo.html"><img style="margin: 68px 0 32px 20px" src="../images/p-another/oppo.png"
-                                              alt="logo-oppo" width="185px" height="80px"></a>
-                <div class="text-logo">
-                    <span>OPPO</span>
+                <div style="margin-right: 30px;" class="tags">
+                    <a href="OPPO/oppo.html"><img style="margin: 68px 0 32px 20px" src="../images/p-another/oppo.png"
+                                                  alt="logo-oppo" width="185px" height="80px"></a>
+                    <div class="text-logo">
+                        <span>OPPO</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="OPPO/oppo.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="text-xm">
-                    <a href="OPPO/oppo.html">
-                        <button class="text-xm-btn">
-                            <span>Xem chi tiết</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div style="width: 200px" class="tags">
-                <a href="REALME/realme.html"><img style="margin: 45px 23px" src="../images/p-another/rlm.png"
-                                                  alt="logo-lg" width="175px" height=90px"></a>
-                <div class="text-logo">
-                    <span>REALME</span>
-                </div>
-                <div class="text-xm">
-                    <a href="REALME/realme.html">
-                        <button class="text-xm-btn">
-                            <span>Xem chi tiết</span>
-                        </button>
-                    </a>
+                <div style="width: 200px" class="tags">
+                    <a href="REALME/realme.html"><img style="margin: 45px 23px" src="../images/p-another/rlm.png"
+                                                      alt="logo-lg" width="175px" height=90px"></a>
+                    <div class="text-logo">
+                        <span>REALME</span>
+                    </div>
+                    <div class="text-xm">
+                        <a href="REALME/realme.html">
+                            <button class="text-xm-btn">
+                                <span>Xem chi tiết</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 </div>
 <!------------------------------------------------------------------------------------------------------------->
 <footer class="footer">

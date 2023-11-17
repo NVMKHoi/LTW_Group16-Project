@@ -48,10 +48,10 @@
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <ul class="sub-nav">
-                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa Xiaomi</a>
+                                <li class="sub-item"><a href="chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
                                 </li>
                                 <li class="sub-item"><a href="chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa Realme</a>
+                                <li class="sub-item"><a href="chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
                                 </li>
                             </ul>
                         </li>
@@ -59,10 +59,15 @@
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="booking">
+                            <a href="login.html" onclick="myFunction()" class="booking">
                                 ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
+                            <script>
+                                function myFunction() {
+                                    alert("Bạn chưa đăng nhập. Vui lòng đăng nhập để tiến hành đặt lịch.");
+                                }
+                            </script>
                         </li>
                     </ul>
                 </div>
@@ -73,42 +78,64 @@
     <!--create conct-->
     <div id="conct">
         <ul>
-            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
         </ul>
     </div>
 
     <div class="content">
-
         <div class="slide-show">
             <div class="container">
-                <div class="slide-wrapper">
-                    <div class="slide fade">
-                        <img src="images/index/slide1.jpg" alt="slide 1">
-                    </div>
-                    <div class="slide fade">
-                        <img src="images/index/slide2.jpg" alt="slide 2">
-                    </div>
-                    <div class="slide fade">
-                        <img src="images/index/slide3.jpg" alt="slide 3">
-                    </div>
+                <div id="by">
+                    <script>
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        var counter = 1;
+                        setInterval(function () {
+                            document.getElementById('radio' + counter).checked = true;
+                            counter++;
+                            if (counter > 3) {
+                                counter = 1;
+                            }
+                        }, 2000);
 
-                    <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+
+                    </script>
+                    <div class="slider">
+                        <div class="slides">
+
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+
+                            <div class="slideImg first">
+                                <img src="images/index/slide1.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="images/index/slide2.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="images/index/slide3.jpg" alt="">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-manual">
+                            <label FOR="radio1" class="manual-btn"></label>
+                            <label FOR="radio2" class="manual-btn"></label>
+                            <label FOR="radio3" class="manual-btn"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
         <div class="about-wrapper">
             <div class="container">
                 <div class="about-us">
@@ -172,7 +199,7 @@
 
                     <div class="rating">
                         <div class="avatar">
-                            <img src="images/index/avatar1.jpg" alt="avatar 1">
+                            <img src="images/index/av1.png" alt="avatar 1">
                         </div>
                         <div class="rating-content">
                             <h3>Huỳnh Hồ Lâm</h3>
@@ -186,7 +213,7 @@
 
                     <div class="rating">
                         <div class="avatar">
-                            <img src="images/index/avatar2.jpg" alt="avatar 2">
+                            <img src="images/index/av2.png" alt="avatar 2">
                         </div>
                         <div class="rating-content">
                             <h3>Phạm Tiến Lộc</h3>
@@ -200,7 +227,7 @@
 
                     <div class="rating">
                         <div class="avatar">
-                            <img src="images/index/avatar3.jpg" alt="avatar 3">
+                            <img src="images/index/av3.png" alt="avatar 3">
                         </div>
                         <div class="rating-content">
                             <h3>Nguyễn Văn Minh Khôi</h3>
