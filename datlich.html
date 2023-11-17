@@ -63,7 +63,7 @@
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="booking">
+                            <a href="datlich.html" class="booking" >
                                 ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
@@ -76,11 +76,11 @@
     <!------------------------------------------------------------------------------------------------------------->
     <div id="conct">
         <ul>
-            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
         </ul>
     </div>
     <div class="home">
@@ -98,24 +98,25 @@
             <!--            table-->
             <div id="appointment">
                 <div class="dlhen">
+                    <form action=" " method="get">
                     <h1>ĐẶT LỊCH HẸN NGAY</h1>
                     <div class="form">
                         <div class="dl-input" data-validate="Please Type Your Name">
                             <span class="label-input">Họ tên <span style="color: red;">*</span></span>
-                            <input class="input" type="text" name="name" placeholder="Nhập tên của bạn">
+                            <input class="input" type="text" name="name" placeholder="Nhập tên của bạn" required>
                         </div>
                         <div class="col2-form">
                             <div style="margin-right: 22px" class="dl-input"
                                  data-validate="Enter Your Address (abc,xyz)">
                                 <span class="label-input">Địa chỉ <span style="color: red;">*</span></span>
-                                <input class="input" type="text" name="address" placeholder="Nhập địa chỉ của bạn">
+                                <input class="input" type="text" name="address" placeholder="Nhập địa chỉ của bạn" required>
                             </div>
                             <div class="dl-input" data-validate="Enter Your Phone (0x)">
                                 <span class="label-input">Phone <span style="color: red;">*</span></span>
-                                <input class="input" type="text" name="phone" placeholder="Nhập số điện thoại của bạn">
+                                <input class="input" type="number" name="phone" placeholder="Nhập số điện thoại của bạn" required>
                             </div>
                         </div>
-                        <div style="height: auto;" class="dl-input" data-validate="Please Type Your Name">
+                        <div style="height: auto;" class="dl-input" data-validate="Please Type Your Name" required>
                             <span class="label-input">Chọn nhãn hàng mà bạn muốn <span
                                     style="color: red;">*</span></span>
                             <div class="body">
@@ -167,14 +168,14 @@
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Tên điện thoại <span
                                                         style="color: red;">*</span></span>
-                                                <input class="input" type="text" name="text"
-                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                                <input class="input" type="text" name="name"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa" required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Chọn ngày hẹn dự kiến <span
                                                         style="color: red;">*</span></span>
                                                 <input class="input" type="datetime-local" name="birthdaytime"
-                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                                       placeholder="Nhập ngày mà bạn muốn sửa" required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input"> Chọn phương thức dịch vụ <span
@@ -225,14 +226,14 @@
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Tên điện thoại <span
                                                         style="color: red;">*</span></span>
-                                                <input class="input" type="text" name="text"
-                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                                <input class="input" type="text" name="name"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa" required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Chọn ngày hẹn dự kiến <span
                                                         style="color: red;">*</span></span>
                                                 <input class="input" type="datetime-local" name="birthdaytime"
-                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                                       placeholder="Nhập ngày mà bạn muốn sửa" required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input"> Chọn phương thức dịch vụ <span
@@ -291,14 +292,14 @@
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Tên điện thoại <span
                                                         style="color: red;">*</span></span>
-                                                <input class="input" type="text" name="text"
-                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                                <input class="input" type="text" name="name"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Chọn ngày hẹn dự kiến <span
                                                         style="color: red;">*</span></span>
                                                 <input class="input" type="datetime-local" name="birthdaytime"
-                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                                       placeholder="Nhập ngày mà bạn muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input"> Chọn phương thức dịch vụ <span
@@ -357,14 +358,14 @@
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Tên điện thoại <span
                                                         style="color: red;">*</span></span>
-                                                <input class="input" type="text" name="text"
-                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                                <input class="input" type="text" name="name"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Chọn ngày hẹn dự kiến <span
                                                         style="color: red;">*</span></span>
                                                 <input class="input" type="datetime-local" name="birthdaytime"
-                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                                       placeholder="Nhập ngày mà bạn muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input"> Chọn phương thức dịch vụ <span
@@ -423,14 +424,14 @@
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Tên điện thoại <span
                                                         style="color: red;">*</span></span>
-                                                <input class="input" type="text" name="text"
-                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa">
+                                                <input class="input" type="text" name="name"
+                                                       placeholder="Nhập tên điện thoại bạn đang muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input">Chọn ngày hẹn dự kiến <span
                                                         style="color: red;">*</span></span>
                                                 <input class="input" type="datetime-local" name="birthdaytime"
-                                                       placeholder="Nhập ngày mà bạn muốn sửa">
+                                                       placeholder="Nhập ngày mà bạn muốn sửa"required>
                                             </div>
                                             <div class="dl-input" data-validate="Please Type Your Name">
                                                 <span class="label-input"> Chọn phương thức dịch vụ <span
@@ -457,11 +458,24 @@
                                       placeholder="Hãy viết gì đó..."></textarea>
                         </div>
                         <div class="container-contact100-form-btn">
-                            <button type="submit" onclick="myFunction()" class="contact100-form-btn">
-                                Đặt lịch
-                            </button>
+                            <input style="border: solid 1px black;" type="submit" class="contact100-form-btn" id="myBtn" value="Đặt lịch">
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close"><a href="index.html">&times;</a></span>
+                                        <h1>Đặt lịch thành công !</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Mã đơn hàng của bạn là 16113</h3>
+                                        <p>Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của cửa hàng</p>
+                                        <p>Lưu ý: Chụp lại màn hình hoặc ghi nhớ mã đơn hàng để thuận tiện cho việc tra cứu.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -528,9 +542,6 @@
 </footer>
 </div>
 <script>
-    function myFunction() {
-        alert("Bạn đã đặt lịch thành công!");
-    }
 
     const datlich = document.querySelectorAll('.tb_btn');
     const all_content = document.querySelectorAll('.ctent');
@@ -552,6 +563,22 @@
             all_content[index].classList.add('active');
         })
     })
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
 </script>
 </body>
 </html>

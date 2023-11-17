@@ -59,10 +59,15 @@
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="datlich.html" class="booking">
+                            <a href="login.html" onclick="myFunction()"class="booking">
                                 ĐẶT LỊCH HẸN
                                 <i class="fa fa-arrow-right"></i>
                             </a>
+                            <script>
+                                function myFunction() {
+                                    alert("Bạn chưa đăng nhập. Vui lòng đăng nhập để tiến hành đặt lịch.");
+                                }
+                            </script>
                         </li>
                     </ul>
                 </div>
@@ -73,11 +78,11 @@
     <!--create conct-->
     <div id="conct">
         <ul>
-            <li><a href="#home"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#news"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#conn"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
         </ul>
     </div>
 
@@ -94,7 +99,8 @@
                             if (counter > 3) {
                                 counter = 1;
                             }
-                        }, 4000);
+                        }, 2000);
+
 
                     </script>
                     <div class="slider">
@@ -164,8 +170,7 @@
 
                 <div class="tabs pt-50">
                     <div class="tabs-head">
-                        <button class="tabs-link active" onclick="openTab(Event, 'NV')" id="defaultOpen">Đội ngũ nhân
-                            viên
+                        <button class="tabs-link active" onclick="openTab(Event, 'NV')" id="defaultOpen">Đội ngũ nhân viên
                         </button>
                         <button class="tabs-link" onclick="openTab(Event, 'TB')">Trang thiết bị</button>
                     </div>
@@ -300,7 +305,6 @@
             </div>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </div>
 </body>

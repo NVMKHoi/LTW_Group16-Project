@@ -36,7 +36,6 @@ function showSlides(n) {
 }
 
 // index - tabs
-
 function openTab(Event, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabs-content");
