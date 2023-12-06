@@ -16,25 +16,6 @@
 <body>
 <div class="main">
     <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="logo">
-                    <a href="../../index.html">
-                        <img src="../../images/logo.png" alt="logo">
-                    </a>
-
-                </div>
-                <div class="search">
-                    <input type="text" class="search-input" placeholder="Tìm kiếm...">
-                    <button type="submit" class="search-summit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-                <div class="login">
-                    <a href="../../login.html" class="login-btn">ĐĂNG NHẬP</a>
-                </div>
-            </div>
-        </div>
         <div class="header-foot">
             <div class="container">
                 <div class="navigation">
@@ -77,7 +58,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
+                            <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-item-link"><i class="fa fa-shopping-cart" style="font-size: 20px">&nbsp;</i>GIỎ HÀNG</a>
                         </li>
                     </ul>
                 </div>
@@ -112,12 +96,12 @@
             <div id="by">
                 <script>
 
-                    var counter = 3;
+                    var count = 1;
                     setInterval(function () {
-                        document.getElementById('radio' + counter).checked = true;
-                        counter++;
-                        if (counter > 5) {
-                            counter = 3;
+                        document.getElementById('radio' + count).checked = true;
+                        count++;
+                        if (count > 5) {
+                            count = 1;
                         }
                     }, 3500);
 
@@ -132,16 +116,16 @@
                         <input type="radio" name="radio-btn" id="radio4">
                         <input type="radio" name="radio-btn" id="radio5">
 
-                            <div class="slide-tag-Img first">
-                                <div class="card-container">
-                                    <div class="problem-card-logo">
-                                        <a href="chuyen-de-iphone.html"><img src="../images/ip-images/apple-logo.png" alt="screen" style="width: 120px; margin: 10px"></a>
-                                    <div class="problem-card-logo-context">
-                                        <h1>Bảng giá sửa chữa/Thay thế linh kiện IPhone</h1>
-                                    </div>
-                                    </div>
+                        <div class="slide-tag-Img first">
+                            <div style="padding: 0 18px" class="product-services">
+                                <div class="product-thumb">
+                                    <img src="../images/ip-images/apple-logo.png" alt="screen" style="height: 130px; width: 190px;padding-left: 55px ;margin: 10px">
+                                </div>
+                                <div style="padding: 50px 200px" class="product-headline">
+                                    <h1>Bảng giá sửa chữa/Thay thế linh kiện IPhone</h1>
                                 </div>
                             </div>
+                        </div>
                             <div class="slide-tag-Img">
                                 <div class="product-services">
                                     <div class="product-thumb">
@@ -156,7 +140,7 @@
                             </div>
                         <div class="slide-tag-Img">
                             <div class="b-top">
-                                <span style="padding: 68px 0 68px 60px" class="gradient">XIAOMI</span>
+                                <span style="padding: 68px 0 68px 50px" class="gradient">XIAOMI</span>
                                 <div style="padding-right: 40px" class="flex2">
                                     <img style="flex: 1; width: 200px;padding-top: 10px" src="../../images/p-another/p-xi.png">
                                     <img style="flex: 1; padding-top: 25px; width: 380px" src="../../images/p-another/p0-xi.png">
@@ -184,15 +168,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                            <div class="auto-btn5"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -201,27 +176,32 @@
             <div>
                 <span><h1>Các vấn đề gặp phải</h1></span>
                 <div class="iss">
-                    <a class="issU" onclick="one()">
-                        Màn hình
+                    <a class="issU" onclick="mh()">
+                        <span class="text-iss" style="margin: 30px; color: white">Màn hình</span>
+                        <img src="images/p-another/mh-issU.png">
                     </a>
-                    <a class="issU" onclick="two()">
-                        Pin
+                    <a class="issU" onclick="pin()">
+                        <span class="text-iss" style="margin: 30px 50px; color: yellow">Pin</span>
+                        <img src="images/p-another/pin-issU.png">
                     </a>
-                    <a class="issU" onclick="more()">
-                        Lỗi nguồn
+                    <a class="issU" onclick="loa()">
+                        <span class="text-iss" style="margin: 30px 50px; color: aqua">Loa</span>
+                        <img src="images/p-another/loa-issU.png">
                     </a>
-                    <a class="issU" onclick="more()">
-                        Cảm ứng
+                    <a class="issU" onclick="cu()">
+                        <span class="text-iss" style="margin: 30px 35px; color: fuchsia">Camera</span>
+                        <img src="images/p-another/cam-issU.png">
                     </a>
-                    <a class="issU" onclick="more()">
-                        Camera
+                    <a class="issU" onclick="mb()">
+                        <span class="text-iss" style="margin: 30px 27px; color: yellowgreen">Mainboard</span>
+                        <img src="images/p-another/main-issU.png" style="width: 120px; height: 80px;">
                     </a>
                 </div>
 
 
             </div>
             <!--tag of line-->
-            <div style="display: none" id="one">
+            <div style="display: " id="mh">
                 <div class="slect">
                     <style>
                         label {
@@ -239,43 +219,73 @@
                         }
                         .slects {
                             flex: 1;
-                            height: 50px;
+                            height: 25px;
+                            margin-left: 25px;
                         }
                     </style>
-                    <h1>Bộ lọc</h1>
+                    <h1>Bộ lọc tìm kiếm</h1>
                     <div class="sec">
+                        <h2>Theo hãng điện thoại</h2>
                         <div class="slects">
                             <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />
-                            <label for="xiaomi11">Xiaomi 11</label>
+                            <label for="xiaomi11">Iphone</label>
                         </div>
-
                         <div class="slects">
                             <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />
-                            <label for="xiaomi12">Xiaomi 12</label>
+                            <label for="xiaomi12">Samsung</label>
+                        </div>
+                        <div class="slects">
+                            <input type="checkbox"  name="drone" value="louie" />
+                            <label for="louie">Xiaomi</label>
                         </div>
 
+
+                        <h2>Theo lỗi điện thoại</h2>
                         <div class="slects">
-                            <input type="checkbox" id="louie" name="drone" value="louie" />
-                            <label for="louie">Louie</label>
+                            <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />
+                            <label for="xiaomi11">Màn hình</label>
                         </div>
+                        <div class="slects">
+                            <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />
+                            <label for="xiaomi12">Pin</label>
+                        </div>
+                        <div class="slects">
+                            <input type="checkbox"  name="drone" value="louie" />
+                            <label for="louie">Loa</label>
+                        </div>
+                        <div class="slects">
+                            <input type="checkbox"  name="drone" value="louie" />
+                            <label for="louie">Camera</label>
+                        </div>
+                        <div class="slects">
+                            <input type="checkbox"  name="drone" value="louie" />
+                            <label for="louie">Mainboard</label>
+                        </div>
+
+
+
+
+
                     </div>
                 </div>
 
 
                 <div class="tag">
-                    <div style="display:" id="xiaomi11">
+                    <div style="" id="xiaomi11">
                         <div class="tags">
+                            <a href="xiaomi-screen.html">
                             <div class="img">
-                                <a href="xiaomi-screen.html"><img src="../../images/p-another/wf.png" alt="logo-lg"></a>
+                                <img src="../../images/p-another/wf.png" alt="logo-lg">
                             </div>
                             <div class="text-logo">
                                 <span>Màn hình XIAOMI</span>
                             </div>
-                            <div class="text-xm">
-                                <button class="text-xm-btn">
-                                    <span>Xem chi tiết</span>
-                                </button>
-                            </div>
+<!--                            <div class="text-xm">-->
+<!--                                <button class="text-xm-btn">-->
+<!--                                    <span>Xem chi tiết</span>-->
+<!--                                </button>-->
+<!--                            </div>-->
+                            </a>
                         </div>
                         <div class="tags">
                             <div class="img">
@@ -330,7 +340,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display:" id="xiaomi12">
+                    <div style="" id="xiaomi12">
                         <div class="tags">
                             <div class="img">
                                 <a href="xiaomi-screen.html"><img src="../../images/p-another/wf.png" alt="logo-lg"></a>
@@ -374,23 +384,23 @@
                 </div>
             </div>
             <script>
-                function one() {
-                    document.getElementById("one").style.display = 'flex';
-                    document.getElementById("two").style.display = 'none';
-                }
-
-                function two() {
-                    document.getElementById("one").style.display = 'none';
-                    document.getElementById("two").style.display = 'flex';
-                }
-                function xiaomi11() {
-                    document.getElementById("xiaomi11").style.display = 'block';
-                    document.getElementById("xiaomi12").style.display = 'none';
-                }
-                function xiaomi12() {
-                    document.getElementById("xiaomi12").style.display = 'block';
-                    document.getElementById("xiaomi11").style.display = 'none';
-                }
+                // function mh() {
+                //     document.getElementById("mh").style.display = 'flex';
+                //     document.getElementById("two").style.display = 'none';
+                // }
+                //
+                // function two() {
+                //     document.getElementById("one").style.display = 'none';
+                //     document.getElementById("two").style.display = 'flex';
+                // }
+                // function xiaomi11() {
+                //     document.getElementById("xiaomi11").style.display = 'block';
+                //     document.getElementById("xiaomi12").style.display = 'none';
+                // }
+                // function xiaomi12() {
+                //     document.getElementById("xiaomi12").style.display = 'block';
+                //     document.getElementById("xiaomi11").style.display = 'none';
+                // }
             </script>
         </div>
         <div style="display: none;" id="two" class="tag">
