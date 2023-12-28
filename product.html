@@ -130,10 +130,15 @@
                             </div>
                             <div class="product-information">
                                 <div class="product-image">
-                                    <div class="product-big-img">
-                                        <img src="images/xssdl.jpg" alt="">
-                                        <!--                                    <img src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg" alt="">-->
+                                    <div class="product-big-img-wrapper">
+                                        <div class="product-big-img">
+                                            <img src="images/xssdl.jpg" alt="">
+                                        </div>
+<!--                                        <div class="product-big-img">-->
+<!--                                            <img src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg" alt="">-->
+<!--                                        </div>-->
                                     </div>
+
                                     <div class="product-small-img-wrapper">
                                         <div class="product-small-img active">
                                             <img src="images/xssdl.jpg" alt="">
@@ -209,8 +214,9 @@
                                         <div class="product-quantity">
                                             <span class="quantity-text">Số lượng</span>
                                             <div class="product-quantity-counter">
-                                                <span class="quantity-down" onClick='decreaseCount(Event, this)'>-</span>
-                                                <input type="number" value="1">
+                                                <span class="quantity-down"
+                                                      onClick='decreaseCount(Event, this)'>-</span>
+                                                <input type="number" min="1" value="1">
                                                 <span class="quantity-up" onClick='increaseCount(Event, this)'>+</span>
                                             </div>
                                             <span class="quantity-text">5 sản phẩm có sẵn</span>
@@ -231,7 +237,11 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="product-detail-info">
+
+                            <!--       Product specification     -->
+
                             <section class="product-specs">
                                 <h1 class="product-specs-title">THÔNG SỐ KỸ THUẬT</h1>
                                 <div class="product-specs-table">
@@ -261,6 +271,9 @@
                                     </ul>
                                 </div>
                             </section>
+
+                            <!--       Product description     -->
+
                             <section class="product-description">
                                 <h1 class="product-description-title">MÔ TẢ SẢN PHẨM</h1>
                                 <h2>Thay pin Pisen iPhone XS dung lượng siêu cao - Chính hãng, an toàn tại CareX</h2>
@@ -355,9 +368,31 @@
                         </div>
                     </div>
 
-                    <div class="product_content-right">
-                        <div class="product-policy">
+                    <!--       Side policy     -->
 
+                    <div class="product_content-right">
+                        <div class="product-side-policy">
+                            <div class="product-side-policy-title">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                <strong>TẠI CAREX</strong>
+                            </div>
+                            <hr>
+                            <div class="product-side-policy-content">
+                                <p><strong>Miễn phí:</strong></p>
+                                <ul>
+                                    <li><p>Sấy máy rơi nước.</p></li>
+                                    <li><p>Kiểm tra máy, tư vấn tổng đài.</p></li>
+                                </ul>
+                                <p><strong>Nổi bật:</strong></p>
+                                <ul>
+                                    <li><p><span>Tiết kiệm</span>, giá công khai, không thêm phí.</p></li>
+                                    <li><p>Được <span>trực tiếp quan sát</span> quá trình sửa chữa.</p></li>
+                                    <li><p>Sửa chữa nhanh chóng, <span>lấy máy ngay trong 30 phút - 1 giờ</span>.</p></li>
+                                    <li><p>Linh kiện thay thế có <span>nguồn gốc rõ ràng</span>.</p></li>
+                                    <li><p>Bảo hành từ <span>6 - 24 tháng</span>.</p></li>
+                                    <li><p><span>Hoàn phí 100% nếu không vừa ý</span>.</p></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
