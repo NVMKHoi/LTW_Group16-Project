@@ -407,12 +407,12 @@ footer .copyright {
 }
                                             /*create tags*/
 #mh{
-    display: flex;
+    display: fex;
 }
 
 .slect{
     flex: 1;
-    max-width: 20%;
+    max-width: 17%;
 }
 
 /*create style tag*/
@@ -420,15 +420,16 @@ footer .copyright {
     margin: 30px 0 50px;
     width: auto;
     flex: 1;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .tags {
     box-shadow: 0 0 1px var(--text-color);
-    height: 230px;
-    width: 170.6px;
+    height: 320px;
+    width: 212px;
     float: left;
-    margin: 0 7px 7px 0;
+    margin: 0 10px 10px 0;
+    border-radius: 7px;
 }
 
 /*create style img*/
@@ -438,19 +439,52 @@ footer .copyright {
 }
 .tags img{
     /*margin: 25px;*/
-    width: 170.6px;
+    width: 212px;
+    border-radius: 7px;
+    display: block;
+    padding: 20px;
 }
 
 /*style fontsize*/
 .text-logo {
+    color: var(--black-color);
     width: auto;
-    height: 35px;
-    padding: 10px 0;
+    height: 17.12px;
+    margin: 13px 0;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
 }
 
+.priceX{
+    color: var(--main-color);
+    width: auto;
+    height: 20px;
+    margin-top: 13px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.voucher{
+    color: var(--black-color);
+    width: auto;
+    height: 25px;
+    padding: 3px 0;
+    bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+    text-decoration: none;
+    background-color: lightsalmon;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
 /*create button xemchitiet*/
 .text-xm {
     justify-content: center;
