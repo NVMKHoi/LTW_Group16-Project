@@ -1612,29 +1612,29 @@ div .extra-btn {
     width: 100%;
 }
 
-.slide-wrapper .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: var(--white-color);
-    font-weight: 700;
-    font-size: 1.8rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;;
-    user-select: none;
-}
+/*.slide-wrapper .prev, .next {*/
+/*    cursor: pointer;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    width: auto;*/
+/*    margin-top: -22px;*/
+/*    padding: 16px;*/
+/*    color: var(--white-color);*/
+/*    font-weight: 700;*/
+/*    font-size: 1.8rem;*/
+/*    transition: 0.6s ease;*/
+/*    border-radius: 0 3px 3px 0;;*/
+/*    user-select: none;*/
+/*}*/
 
-.slide-wrapper .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+/*.slide-wrapper .next {*/
+/*    right: 0;*/
+/*    border-radius: 3px 0 0 3px;*/
+/*}*/
 
-.slide-wrapper .prev:hover, .next:hover {
-    background-color: rgba(244, 147, 0, 0.8);
-}
+/*.slide-wrapper .prev:hover, .next:hover {*/
+/*    background-color: rgba(244, 147, 0, 0.8);*/
+/*}*/
 
 .dots {
     text-align: center;
@@ -2307,16 +2307,46 @@ div .extra-btn {
 
 .product-information .product-image {
     width: 50%;
-    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+
+}
+
+.product-image .product-big-img-wrapper {
+    /*display: flex;*/
+    position: relative;
+}
+
+.pre, .nxt {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px 10px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 0 20px 20px 0;
+    user-select: none;
+}
+
+.nxt {
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.pre:hover, .nxt:hover {
+    border: solid 1px #7a7a7a6d;
 }
 
 .product-image .product-big-img {
     padding: 10px;
     border: solid 1px #7a7a7a6d;
-    box-shadow: 0 1px 3px 0 #00000080;
     border-radius: 5px;
     width: 100%;
     max-height: 380px;
+    /*display: none;*/
 }
 
 .product-image .product-big-img img {
