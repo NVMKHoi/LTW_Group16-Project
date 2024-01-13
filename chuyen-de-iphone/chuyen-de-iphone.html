@@ -12,6 +12,7 @@
     <script src="../js/main.js"></script>
 
 </head>
+
 <body>
 <div class="main">
     <header class="header">
@@ -39,34 +40,38 @@
                 <div class="navigation">
                     <ul class="nav-bar">
                         <li class="nav-item">
-                            <a href="chuyen-de-iphone.html" class="nav-item-link">SỬA CHỮA IPHONE</a>
+                            <a href="chuyen-de-iphone.html" class="nav-item-link">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../chuyen-de-samsung/chuyen-de-samsung.html" class="nav-item-link">SỬA CHỮA SAMSUNG</a>
+                            <a href="chuyen-de-iphone.html" class="nav-item-link">CHUẨN ĐOÁN LỖI</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA CHỮA HÃNG KHÁC
+                            <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA ĐIỆN THOẠI
                                 <i class="fa fa-chevron-down"></i>
                             </a>
-                            <ul class="sub-nav">
-                                <li class="sub-item"><a href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a></li>
-                                <li class="sub-item"><a href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a></li>
-                                <li class="sub-item"><a href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a></li>
-                            </ul>
+                            <div class="sub-nav">
+                                <div class="sub-nav-list">
+                                    <h3>Thương hiệu</h3>
+                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">XIAOMI</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">OPPO</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">REALME</a>
+                                </div>
+                                <div class="sub-nav-list">
+                                    <h3>Loại hình sửa chữa</h3>
+                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
+                                </div>
+                                <div class="sub-nav-list">
+                                    <h3>Dịch vụ nổi bật</h3>
+                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a>
+                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a href="../contact.html" class="nav-item-link">LIÊN HỆ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../login.html" onclick="myFunction()"class="booking">
-                                ĐẶT LỊCH HẸN
-                                <i class="fa fa-arrow-right"></i>
-                            </a>
-                            <script>
-                                function myFunction() {
-                                    alert("Bạn chưa đăng nhập. Vui lòng đăng nhập để tiến hành đặt lịch.");
-                                }
-                            </script>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +85,8 @@
             </li>
             <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
-            <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="../contact.html"><i style="font-size: 30px" class="fa fa-google" aria-hidden="true"></i></a>
+            </li>
         </ul>
     </div>
 
@@ -101,105 +107,139 @@
     </div>
     <div class="content">
         <div class="container">
-            <div class="card-container">
-<!--                apple icon-->
-                <div class="problem-card-logo">
-                    <a href="chuyen-de-iphone.html"><img src="../images/ip-images/apple-logo.png" alt="screen" style="width: 200px; margin: 3px"></a>
-                </div>
-                <div class="problem-card-logo-context">
-                    <h1>Bảng giá sửa chữa/Thay thế linh kiện IPhone</h1>
-                </div>
+            <div class="product-header">
+                <h1>Danh sách linh kiện</h1>
             </div>
-            <!--            /apple icon-->
-            <div class="card-container">
-                <div class="problem-card">
-                    <a href="ip-manhinh.html"><img src="../images/ip-images/screen.jpg" alt="screen" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-manhinh.html">Màn hình - Kính</a>
+            <div class="product-container">
+                <div class="product-filter">
+                    <h1>Bộ lọc</h1>
+                    <ul>
+                        <li><input type="checkbox" id="all-products" name="brands" checked>
+                            <label for="all-products">Tất cả</label>
+                        </li>
+                    </ul>
+                    <h3>Thương hiệu</h3>
+                    <ul>
+                        <li><input type="checkbox" id="brand1" name="brands">
+                            <label for="brand1">Pisen</label>
+                        </li>
+                        <li><input type="checkbox" id="brand2" name="brands">
+                            <label for="brand2">Orizin</label>
+                        </li>
+                        <li><input type="checkbox" id="brand3" name="brands">
+                            <label for="brand3">GX</label>
+                        </li>
+                        <li><input type="checkbox" id="brand4" name="brands">
+                            <label for="brand4">Gen A</label>
+                        </li>
+                        <li><input type="checkbox" id="brand5" name="brands">
+                            <label for="brand5">Vmas</label>
+                        </li>
+                        <li><input type="checkbox" id="brand6" name="brands">
+                            <label for="brand6">KARS</label>
+                        </li>
+                        <li><input type="checkbox" id="brand7" name="brands">
+                            <label for="brand7">Energizer</label>
+                        </li>
+                    </ul>
+                    <h3>Kiểu máy</h3>
+                    <ul>
+                        <li><input type="checkbox" id="model0" name="model">
+                            <label for="model0"> iPhone 5</label>
+                        </li>
+                        <li><input type="checkbox" id="model" name="model">
+                            <label for="model"> iPhone 6</label>
+                        </li>
+                        <li><input type="checkbox" id="model2" name="model">
+                            <label for="model2"> iPhone 7</label>
+                        </li>
+                        <li><input type="checkbox" id="model3" name="model">
+                            <label for="model3"> iPhone 8</label>
+                        </li>
+                        <li><input type="checkbox" id="model4" name="model">
+                            <label for="model4"> iPhone SE</label>
+                        </li>
+                        <li><input type="checkbox" id="model5" name="model">
+                            <label for="model5"> iPhone X</label>
+                        </li>
+                        <li><input type="checkbox" id="model6" name="model">
+                            <label for="model6"> iPhone 11</label>
+                        </li>
+                        <li><input type="checkbox" id="model7" name="model">
+                            <label for="model7"> iPhone 12</label>
+                        </li>
+                        <li><input type="checkbox" id="model8" name="model">
+                            <label for="model8"> iPhone 13</label>
+                        </li>
+                        <li><input type="checkbox" id="model9" name="model">
+                            <label for="model9"> iPhone 14</label>
+                        </li>
+                        <li><input type="checkbox" id="model10" name="model" onclick="filterProduct()">
+                            <label for="model10"> iPhone 15</label>
+                        </li>
+                    </ul>
+                    <h3>Theo linh kiện</h3>
+                    <ul>
+                        <li><input type="checkbox" id="part" name="parts">
+                            <label for="part">Màn hình</label>
+                        </li>
+                        <li><input type="checkbox" id="part2" name="parts">
+                            <label for="part2">Pin</label>
+                        </li>
+                        <li><input type="checkbox" id="part3" name="parts">
+                            <label for="part3">Mainboard</label>
+                        </li>
+                        <li><input type="checkbox" id="part4" name="parts">
+                            <label for="part4">Camera</label>
+                        </li>
+                        <li><input type="checkbox" id="part5" name="parts">
+                            <label for="part5">Loa</label>
+                        </li>
+                    </ul>
+                    <h3>Theo lỗi thiết bị</h3>
+                    <ul>
+                        <li><input type="checkbox" id="issue" name="issues">
+                            <label for="issue">Mất sóng</label>
+                        </li>
+                        <li><input type="checkbox" id="issue1" name="issues">
+                            <label for="issue1">Sạc không vào</label>
+                        </li>
+                        <li><input type="checkbox" id="issue2" name="issues">
+                            <label for="issue2">Lỗi Wifi</label>
+                        </li>
+                        <li><input type="checkbox" id="issue3" name="issues">
+                            <label for="issue3">Màn hình</label>
+                        </li>
+                        <li><input type="checkbox" id="issue4" name="issues">
+                            <label for="issue4">Độ vỏ, thay vỏ</label>
+                        </li>
+                        <li><input type="checkbox" id="issue5" name="issues">
+                            <label for="issue5">Chai pin</label>
+                        </li>
+                        <li><input type="checkbox" id="issue6" name="issues">
+                            <label for="issue6">Cam rung</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <div class="card-container">
+                        <div class="prod-card product15" onclick="goToDetail()" id="product-1" style="display: block">
+                            <a href="../chuyen-de-iphone/ip-manhinh.html"><img src="../images/ip-images/ip-screen14-15.webp" alt="screen"
+                            ></a>
+                            <div class="product-name">
+                                <h2>Màn hình GX cho iPhone 15 giá rẻ như cho, bán như không bán</h2>
+                            </div>
+                            <div class="product-amount">
+                                SL kho:31
+                            </div>
+                            <div class="product-price">
+                                <h2>6.699.999</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="problem-card">
-                    <a href="ip-camera.html"><img src="../images/ip-images/cam.jpg" alt="cam" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-camera.html">Camera</a>
-                    </div>
-                </div>
-                <div class="problem-card">
-                    <a href="ip-pin.html"><img src="../images/ip-images/pin.jpg" alt="battery" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-pin.html">Pin</a>
-                    </div>
-                </div>
-                <div class="problem-card">
-                    <a href="ip-sac.html"><img src="../images/ip-images/sac.jpg" alt="charge" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-sac.html">Cổng sạc</a>
-                    </div>
-                </div>
-                <div class="problem-card">
-                    <a href="ip-loa.html"><img src="../images/ip-images/loa.jpg" alt="speaker" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-loa.html">Loa</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-container" id="row2" style="display: none">
-                <div class="problem-card">
-                    <a href="ip-mainboard.html"><img src="../images/ip-images/main.jpg" alt="speaker" style="width: 200px"></a>
-                    <div class="context">
-                        <a href="ip-mainboard.html">Mainborad</a>
-                    </div>
-                </div>
-                <div class="problem-card soon">
-                    <a><img src="../images/ip-images/icloud.png" alt="cloud" style="width: 200px; opacity: 0.5"></a>
-                    <div class="overlay">
-                        Sắp có
-                    </div>
-                    <div class="context" style="background: var(--text-color)">
-                        <b>iCloud</b>
-                    </div>
-                </div>
-                <div class="problem-card soon">
-                    <a><img src="../images/ip-images/esim.png" alt="e-sim" style="width: 200px; opacity: 0.5"></a>
-                    <div class="overlay">
-                        Sắp có
-                    </div>
-                    <div class="context" style="background: var(--text-color)">
-                        <b>eSim</b>
-                    </div>
-                </div>
-                <div class="problem-card soon">
-                    <a><img src="../images/ip-images/appstore.png" alt="store" style="width: 200px; opacity: 0.5"></a>
-                    <div class="overlay">
-                        Sắp có
-                    </div>
-                    <div class="context" style="background: var(--text-color)">
-                        <b>App Store</b>
-                    </div>
-                </div>
-                <div class="problem-card soon">
-                    <a><img src="../images/ip-images/touchid.png" alt="tid" style="width: 200px; opacity: 0.5"></a>
-                    <div class="overlay">
-                        Sắp có
-                    </div>
-                    <div class="context" style="background: var(--text-color)">
-                        <b>Cảm biến vân tay</b>
-                    </div>
-                </div>
-            </div>
-            <div class="extra-btn" id="more-btn">
-                <button class="e-btn" onclick="showMore()">
-                        Xem thêm
-                </button>
-            </div>
-            <div class="extra-btn" id="less-btn" style="display: none">
-                <button class="e-btn" onclick="showLess()">
-                    Ẩn bớt
-                </button>
             </div>
         </div>
-
     </div>
 </div>
 <footer class="footer">
