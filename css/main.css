@@ -417,8 +417,6 @@ footer .copyright {
 
 /*create style tag*/
 .tag {
-    margin: 30px 0 50px;
-    width: auto;
     flex: 1;
     max-width: 100%;
 }
@@ -442,7 +440,7 @@ footer .copyright {
     width: 212px;
     border-radius: 7px;
     display: block;
-    padding: 20px;
+    padding: 10px 20px 20px;
 }
 
 /*style fontsize*/
