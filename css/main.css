@@ -237,7 +237,7 @@ footer .copyright {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 4.2%;
+    /*width: 4.2%;*/
     top: 50%;
     transform: translateY(-50%);
 }
@@ -2630,50 +2630,62 @@ div .extra-btn {
     width: 50%;
     margin-right: 10px;
     position: relative;
-
 }
 
 .product-image .product-big-img-wrapper {
-    /*display: flex;*/
     position: relative;
 }
 
-.pre, .nxt {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px 10px;
-    color: var(--main-color);
-    font-weight: bold;
-    font-size: 1.6rem;
-    border-radius: 0 20px 20px 0;
-    user-select: none;
-}
-
-.nxt {
-    right: 0;
-    border-radius: 20px 0 0 20px;
-}
-
-.pre:hover, .nxt:hover {
-    border: solid 1px #7a7a7a6d;
-}
-
 .product-image .product-big-img {
-    padding: 10px;
-    border: solid 1px #7a7a7a6d;
-    border-radius: 5px;
     width: 100%;
-    max-height: 380px;
-    /*display: none;*/
+    height: 360px;
+    position: relative;
 }
 
 .product-image .product-big-img img {
     max-height: 360px;
     width: 100%;
     object-fit: contain;
+    position: absolute;
+    padding: 10px;
+    border: solid 1px #7a7a7a6d;
+    border-radius: 5px;
+}
+
+.product-image a {
+    display: block;
+    width: 40px;
+    height: 45px;
+    background-color: var(--main-color);
+    opacity: 0.1;
+    z-index: 1000;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-color);
+    line-height: 45px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-image .next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px 0 0 20px;
+}
+
+.product-image .prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 20px 20px 0;
+}
+
+.product-image .prev:hover, .next:hover {
+    border: solid 1px #7a7a7a6d;
+    opacity: 1;
 }
 
 .product-image .product-small-img-wrapper {
@@ -2690,6 +2702,7 @@ div .extra-btn {
     box-shadow: 0 1px 4px #00000010;
     padding: 5px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .product-image .product-small-img.active {
@@ -2699,7 +2712,6 @@ div .extra-btn {
 .product-image .product-small-img:hover {
     border: solid 1px var(--main-color);
 }
-
 
 .product-image .product-small-img img {
     width: 100%;

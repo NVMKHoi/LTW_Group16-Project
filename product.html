@@ -143,22 +143,22 @@
                                 <div class="product-image">
                                     <div class="product-big-img-wrapper">
                                         <div class="product-big-img">
-                                            <img src="images/xssdl.jpg" alt="">
+                                            <img src="images/xssdl.jpg" class="slide-item" alt="" number="0"
+                                                 id="main-img">
+                                            <img src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg"
+                                                 class="slide-item" alt="" number="1" style="display: none">
                                         </div>
-                                        <!--                                        <div class="product-big-img">-->
-                                        <!--                                            <img src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg" alt="">-->
-                                        <!--                                        </div>-->
+                                        <a href="#" class="next">&#10095;</a>
+                                        <a href="#" class="prev">&#10095;</a>
                                     </div>
-                                    <a class="pre" onclick="plusSlides(-1)">&#10095;</a>
-                                    <a class="nxt" onclick="plusSlides(1)">&#10095;</a>
+
                                     <div class="product-small-img-wrapper">
                                         <div class="product-small-img">
-                                            <img class="demo" src="images/xssdl.jpg" alt="" onclick="currentSlide(1)">
+                                            <img class="demo" src="images/xssdl.jpg" alt="">
                                         </div>
                                         <div class="product-small-img">
                                             <img class="demo"
-                                                 src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg" alt=""
-                                                 onclick="currentSlide(2)">
+                                                 src="images/thay-pin-iphone-xs-dung-luong-sieu-cao-pisen-2.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -488,5 +488,44 @@
     </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script>
+    $(() => {
+        $('.next').click(function () {
+            changeImg('next');
+        })
+
+        $('.prev').click(function () {
+            changeImg('prev');
+        })
+
+        function changeImg(type) {
+            let imgSelectVisible = $('img.slide-item:visible');
+            let imgVisible = parseInt(imgSelectVisible.attr('number'));
+            let eqNumber = type === 'next' ? imgVisible + 1 : imgVisible - 1;
+
+            if (imgVisible === 0) {
+                eqNumber = $('.slide-item').length - 1;
+            }
+
+            if (eqNumber >= $('.slide-item').length) {
+                eqNumber = 0;
+            }
+
+            $('img.slide-item').eq(eqNumber).fadeIn();
+
+            imgSelectVisible.fadeOut();
+        }
+
+        setInterval(function () {
+            $('.prev').click();
+        }, 3000);
+
+        $('.product-small-img img').click(function () {
+            let imgPath = $(this).attr('src');
+            $('#main-img').attr('src', imgPath);
+        })
+    })
+</script>
 </body>
 </html>
