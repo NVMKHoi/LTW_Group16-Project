@@ -140,6 +140,7 @@ footer .footer-row {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: 10px;
 }
 
 .nav-column-logo {
@@ -2706,10 +2707,6 @@ div .extra-btn {
 }
 
 .product-image .product-small-img.active {
-    border: solid 1px var(--main-color);
-}
-
-.product-image .product-small-img:hover {
     border: solid 1px var(--main-color);
 }
 
