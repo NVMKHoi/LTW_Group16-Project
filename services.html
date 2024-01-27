@@ -29,27 +29,29 @@
                             <a href="index.html" class="nav-item-link">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../chuyen-de-khac/chuyen-de-khac.html" class="nav-item-link">SỬA ĐIỆN THOẠI
+                            <a href="services.html" class="nav-item-link">SỬA ĐIỆN THOẠI
                                 <i class="fa fa-chevron-down"></i>
                             </a>
                             <div class="sub-nav">
                                 <div class="sub-nav-list">
-                                    <h3>Thương hiệu</h3>
-                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">XIAOMI</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">OPPO</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">REALME</a>
+                                    <h3>Dòng đời máy</h3>
+                                    <a class="sub-item" onclick="mhip13()">Iphone 13</a>
+                                    <a class="sub-item" href="">Iphone 14</a>
+                                    <a class="sub-item" href="">Iphone 15</a>
                                 </div>
-                                <div class="sub-nav-list">
+                                <div class="sub-nav-list" style="cursor: pointer">
                                     <h3>Loại hình sửa chữa</h3>
-                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
+                                    <a class="sub-item" onclick="manhinh()">Màn hình</a>
+                                    <a class="sub-item" onclick="pin()">Pin</a>
+                                    <a class="sub-item" onclick="cam()">Camera</a>
+                                    <a class="sub-item" onclick="mb()">Mainboard</a>
                                 </div>
                                 <div class="sub-nav-list">
                                     <h3>Dịch vụ nổi bật</h3>
-                                    <a class="sub-item" href="../chuyen-de-khac/XIAOMI/xiaomi.html">Sửa chữa XIAOMI</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/OPPO/oppo.html">Sửa chữa OPPO</a>
-                                    <a class="sub-item" href="../chuyen-de-khac/REALME/realme.html">Sửa chữa REALME</a>
+                                    <a class="sub-item" href="product3.html">Thay màn hình GenA Iphone 13</a>
+                                    <a class="sub-item" href="product2.html">Thay màn hình GX Iphone 13</a>
+                                    <a class="sub-item" href="product.html">Thay pin Pisen Iphone 13</a>
+                                    <a class="sub-item" href="">Thay lòng đổi dạ</a>
                                 </div>
                             </div>
                         </li>
@@ -62,7 +64,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-item-link">CHUẨN ĐOÁN LỖI</a>
+                            <a href="faq.html" class="nav-item-link">CHUẨN ĐOÁN LỖI</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-item-link">LIÊN HỆ</a>
@@ -87,12 +89,19 @@
             </li>
         </ul>
     </div>
-    <div class="home">
+    <div class="breadcrumb">
         <div class="container">
-            <ul>
-                <li>
-                    <i style="font-size: 14px" class="fa fa-home" aria-hidden="true"></i>
-                    <a href="../chuyen-de-khac.html">SỬA ĐIỆN THOẠI</a>
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="home-icon">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="services.html">Sửa điện thoại </a>
                 </li>
             </ul>
         </div>
@@ -184,7 +193,7 @@
             <div>
                 <span><h1>Các vấn đề gặp phải</h1></span>
                 <div class="iss">
-                    <a class="issU" onclick="mh()">
+                    <a class="issU" onclick="manhinh()">
                         <span class="text-iss" style="margin: 63px 15px; color: black">Màn hình</span>
                         <img style="" src="images/p-another/ma-issU.png">
                     </a>
@@ -192,11 +201,7 @@
                         <span class="text-iss" style="margin: 63px 15px; color: black">Pin</span>
                         <img src="images/p-another/pin-issU.png">
                     </a>
-                    <a class="issU" onclick="loa()">
-                        <span class="text-iss" style="margin: 63px 15px; color: black">Loa</span>
-                        <img src="images/p-another/loa-issU.png">
-                    </a>
-                    <a class="issU" onclick="cu()">
+                    <a class="issU" onclick="cam()">
                         <span class="text-iss" style="margin: 63px 15px; color: black">Camera</span>
                         <img src="images/p-another/camera-issU.png">
                     </a>
@@ -209,8 +214,8 @@
 
             </div>
             <!--tag of line-->
-            <div style="display: " id="mh">
-                <div class="slect">
+<!--            <div style="display: " id="mh">-->
+<!--                <div class="slect">-->
                     <style>
                         label {
                             font: 1rem 'Fira Sans', sans-serif;
@@ -232,395 +237,630 @@
                             margin-left: 25px;
                         }
                     </style>
-                    <h1>Bộ lọc tìm kiếm</h1>
-                    <div class="sec">
-                        <h2>Theo hãng điện thoại</h2>
-                        <div class="slects">
-                            <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />
-                            <label for="xiaomi11">Iphone</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />
-                            <label for="xiaomi12">Samsung</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox"  name="drone" value="louie" />
-                            <label for="louie">Xiaomi</label>
-                        </div>
+<!--                    <h1>Bộ lọc tìm kiếm</h1>-->
+<!--                    <div class="sec">-->
+<!--                        <h2>Theo hãng điện thoại</h2>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />-->
+<!--                            <label for="xiaomi11">Iphone</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />-->
+<!--                            <label for="xiaomi12">Samsung</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox"  name="drone" value="louie" />-->
+<!--                            <label for="louie">Xiaomi</label>-->
+<!--                        </div>-->
 
 
-                        <h2>Theo lỗi điện thoại</h2>
-                        <div class="slects">
-                            <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />
-                            <label for="xiaomi11">Màn hình</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />
-                            <label for="xiaomi12">Pin</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox"  name="drone" value="louie" />
-                            <label for="louie">Loa</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox"  name="drone" value="louie" />
-                            <label for="louie">Camera</label>
-                        </div>
-                        <div class="slects">
-                            <input type="checkbox"  name="drone" value="louie" />
-                            <label for="louie">Mainboard</label>
-                        </div>
+<!--                        <h2>Theo lỗi điện thoại</h2>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox" onclick="xiaomi11()" name="drone" value="huey"  />-->
+<!--                            <label for="xiaomi11">Màn hình</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox" onclick="xiaomi12()" name="drone" value="dewey" />-->
+<!--                            <label for="xiaomi12">Pin</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox"  name="drone" value="louie" />-->
+<!--                            <label for="louie">Loa</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox"  name="drone" value="louie" />-->
+<!--                            <label for="louie">Camera</label>-->
+<!--                        </div>-->
+<!--                        <div class="slects">-->
+<!--                            <input type="checkbox"  name="drone" value="louie" />-->
+<!--                            <label for="louie">Mainboard</label>-->
+<!--                        </div>-->
 
 
 
 
 
-                    </div>
-                </div>
-            </div>
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
                 <div class="tag">
-                    <div style="" id="xiaomi11">
+                    <div style="" id="manhinh">
+                        <div id="mhip13">
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product3.html">
+                                <div class="img">
+                                    <img src="images/p-another/genAip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Màn hình chính hãng Gen A thay cho iPhone 13</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>5.000.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product2.html">
+                                <div class="img">
+                                    <img src="images/p-another/gxip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Màn hình chính hãng GX thay cho iPhone 13</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>7.00.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/daisonip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Màn hình chính hãng DAISON thay cho iPhone 13</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>2.000.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div id="mhip14">
+                        <div class="tags">
+                            <a href="product.html">
                             <div class="img">
-                                <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                <img src="images/p-another/genAip14.png" alt="logo-lg">
                             </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                             <div class="text-logo">
-                                <span>Thay màn hình realme 5</span>
+                                <span>Màn hình chính hãng Gen A thay cho iPhone 14</span>
                             </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>7.000.000 VND</span>
                                 </div>
                             <div class="voucher">
-                                <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                             </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/gxip14.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Màn hình chính hãng GX thay cho iPhone 14</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>9.000.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/daisonip14.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Màn hình chính hãng DAISON thay cho iPhone 14</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>2.500.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div id="mhip15">
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/genAip15.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Màn hình chính hãng Gen A thay cho iPhone 15</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>10.000.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/gxip15.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Màn hình chính hãng GX thay cho iPhone 15</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>12.000.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/daisonip15.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Màn hình chính hãng DAISON thay cho iPhone 15</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>4.500.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="pin">
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/pinPisen.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Pin siêu cao chính hãng Pisen thay cho iPhone 13</span>
                                 </div>
                                 <div class="priceX">
                                     <span>500.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/pinPisen.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Pin siêu cao chính hãng Pisen thay cho iPhone 14</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>700.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/pinPisen.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Pin siêu cao chính hãng Pisen thay cho iPhone 15</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>900.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/pinVmas.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Pin chính hãng Vmas thay cho iPhone 13</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>400.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/pinVmas.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Pin chính hãng Vmas thay cho iPhone 14</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>600.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/pinVmas.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Pin chính hãng Vmas thay cho iPhone 15</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>800.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="cam">
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/camip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay camera sau cho dòng iPhone 13</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>1.100.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/camip13+.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Thay camera sau cho dòng iPhone 13 Pro+</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>1.600.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
 
                         <div class="tags">
-                            <a href="xiaomi-screen.html">
+                            <a href="product.html">
                                 <div class="img">
-                                    <img src="images/p-another/thay-man-hinh-realme-5-1.webp" alt="logo-lg">
+                                    <img src="images/p-another/camip14.png" alt="logo-lg">
                                 </div>
                                 <div class="decs">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 15 - 30 phút</span>
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
                                 </div>
-                                <div class="decs" style="margin:0 3px; width: 158px">
-                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 2 tháng</span>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
                                 </div>
                                 <div class="text-logo">
-                                    <span>Thay màn hình realme 5</span>
+                                    <span>Thay camera sau cho dòng iPhone 14</span>
                                 </div>
                                 <div class="priceX">
-                                    <span>500.000 VND</span>
+                                    <span>1.450.000 VND</span>
                                 </div>
                                 <div class="voucher">
-                                    <span>Giảm 50% cho tất cả các dịch vụ màn hình</span>
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
                                 </div>
                             </a>
                         </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/camip14+.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay camera sau cho dòng iPhone 14 Pro+</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>1.800.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/camip14.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay camera sau cho dòng iPhone 15</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>2.350.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/camip14+.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay camera sau cho dòng iPhone 15 Pro+</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>2.850.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="mb">
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/mainip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay Mainboard cho dòng Iphone 13</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>3.500.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/mainip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay Mainboard cho dòng Iphone 14</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>4.000.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="tags">
+                            <a href="product.html">
+                                <div class="img">
+                                    <img src="images/p-another/mainip13.png" alt="logo-lg">
+                                </div>
+                                <div class="decs">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Sửa: 30 phút</span>
+                                </div>
+                                <div class="decs" style="margin:0 3px; width: 180px">
+                                    <span><i class='fa fa-clock-o'></i>&nbsp;Hàng chính hãng, bảo hành 12 tháng</span>
+                                </div>
+                                <div class="text-logo">
+                                    <span>Thay Mainboard cho dòng Iphone 15</span>
+                                </div>
+                                <div class="priceX">
+                                    <span>5.000.000 VND</span>
+                                </div>
+                                <div class="voucher">
+                                    <span>Giảm đến 20% cho tất cả các dịch vụ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
                     </div>
                 </div>
             </div>
             <script>
-                // function mh() {
-                //     document.getElementById("mh").style.display = 'flex';
-                //     document.getElementById("two").style.display = 'none';
-                // }
-                //
-                // function two() {
-                //     document.getElementById("one").style.display = 'none';
-                //     document.getElementById("two").style.display = 'flex';
-                // }
-                // function xiaomi11() {
-                //     document.getElementById("xiaomi11").style.display = 'block';
-                //     document.getElementById("xiaomi12").style.display = 'none';
-                // }
-                // function xiaomi12() {
-                //     document.getElementById("xiaomi12").style.display = 'block';
-                //     document.getElementById("xiaomi11").style.display = 'none';
-                // }
+
             </script>
         </div>
-        <div style="display: none;" id="two" class="tag">
-            <div class="tags">
-                <a href="xiaomi-wifi.html">
-                    <img style="margin: 35px 10px; " src="../../images/p-another/wf.png"
-                         alt="logo-" width="200 px" height="110px">
-                </a>
-                <div class="text-logo">
-                    <span>Kết nối XIAOMI</span>
-                </div>
-                <div class="text-xm">
-                    <a href="xiaomi-wifi.html">
-                        <button class="text-xm-btn">
-                            <span>Xem chi tiết</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="tags">
-                <a href="xiaomi-vol.html"><img style="margin:40px 25px;" src="../../images/p-another/vol.png"
-                                               alt="logo-lg" width="200px" height="100px"></a>
-                <div class="text-logo">
-                    <span>Loa XIAOMI</span>
-                </div>
-                <div class="text-xm">
-                    <a href="xiaomi-vol.html">
-                        <button class="text-xm-btn">
-                            <span>Xem chi tiết</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
+
         </div>
-        <!--            <div style="padding: 10px 400px 20px;" id="more" class="container-contact100-form-btn">-->
-        <!--                <button style="padding: 0 80px; border: 1px solid grey;" class="contact100-form-btn" onclick="more()">-->
-        <!--                    Xem thêm<i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
-        <!--                </button>-->
-        <!--            </div>-->
-        <!--            <div style="padding: 10px 400px 20px; display: none" id="hide" class="container-contact100-form-btn">-->
-        <!--                <button style="padding: 0 80px; border: 1px solid grey;" class="contact100-form-btn" onclick="hide()">-->
-        <!--                    Ẩn bớt<i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
-        <!--                </button>-->
-        <!--            </div>-->
     </div>
 </div>
 </div>
@@ -633,7 +873,7 @@
                 <div class="nav-column-logo">
                     <div class="logo">
                         <a href="#">
-                            <img src="../../images/logo.png" alt="logo">
+                            <img src="images/logo2.png" alt="logo">
                         </a>
                     </div>
                     <div class="address">

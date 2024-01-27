@@ -178,3 +178,46 @@ function hide() {
     document.getElementById("hide").style.display = 'none';
 }
 
+function manhinh() {
+    document.getElementById("manhinh").style.display = 'block';
+    document.getElementById("pin").style.display = 'none';
+    document.getElementById("cam").style.display = 'none';
+    document.getElementById("mb").style.display = 'none';
+}
+
+function mhip13() {
+    document.getElementById("mhip13").style.display = 'block';
+    document.getElementById("mhip14").style.display = 'none';
+    document.getElementById("mhip15").style.display = 'none';
+}
+
+function mhip14() {
+    document.getElementById("mhip13").style.display = 'none';
+    document.getElementById("mhip14").style.display = 'block';
+    document.getElementById("mhip15").style.display = 'none';
+}
+
+function mhip15() {
+    document.getElementById("mhip13").style.display = 'none';
+    document.getElementById("mhip14").style.display = 'none';
+    document.getElementById("mhip15").style.display = 'block';
+}
+function pin() {
+    document.getElementById("manhinh").style.display = 'none';
+    document.getElementById("pin").style.display = 'block';
+    document.getElementById("cam").style.display = 'none';
+    document.getElementById("mb").style.display = 'none';
+}
+function cam() {
+    document.getElementById("manhinh").style.display = 'none';
+    document.getElementById("pin").style.display = 'none';
+    document.getElementById("cam").style.display = 'block';
+    document.getElementById("mb").style.display = 'none';
+
+}
+function mb() {
+    document.getElementById("manhinh").style.display = 'none';
+    document.getElementById("pin").style.display = 'none';
+    document.getElementById("cam").style.display = 'none';
+    document.getElementById("mb").style.display = 'block';
+}
